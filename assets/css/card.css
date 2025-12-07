@@ -1,0 +1,850 @@
+.game_quiz_popup{
+    border-radius: 0px 0px 16px 16px;
+    padding: 3.183023872679045vh 5.305039787798409vh;
+    background: url(../../assets/image/game_quiz/bg_quiz.png) no-repeat bottom / cover;
+}
+#game_quiz_page{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    background: white;
+    /*overflow-y: auto;*/
+}
+.append_quiz{
+    width: 100%;
+    height: 86%;
+    overflow-y: auto;
+    position: relative;
+    overflow-x: hidden;
+}
+/* QUESTION TEXT */
+.text_question{
+    text-align: left;
+    /* text-shadow: none; */
+    color: #FFFFFF;
+    padding: 16px 61px 40px 40px;
+    /* max-width: 500px; */
+    /* margin: 0 auto; */
+    font-size: 14px;
+}
+.text_question span{
+    font-weight: bold;
+}
+
+/* PILIHAN JAWABAN */
+.pilihan_wrapper{
+    list-style: none;
+    text-align: left;
+    width: 100%;
+}
+.pilihan_wrapper .pilihan{
+    line-height: 21px;
+    padding: 2.1220159151193636vh 4.244031830238727vh;
+    border: 1px solid #1D8BEC;
+    background: #fff;
+    text-shadow: none;
+    margin: 1.5915119363395225vh 0;
+    border-radius: 8px;
+    position: relative;
+    max-width: 500px;
+    /*margin: 0 auto;*/
+    font-size: 14px;
+    color: #7C7C7C;
+}
+.slider-content.dadseqcat .pilihan_wrapper .pilihan{
+    margin-top: 29px;
+    height: 79px;
+}
+.pilihan_jawaban_wrapper .category_wrapper{
+    display: none;
+}
+.slider-content.dadseqcat .category_wrapper{
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: left;
+}
+.slider-content.dadseqcat .pilihan_jawaban_wrapper .category{height: 110px;}
+.mc .pilihan_wrapper .pilihan,
+.mmc .pilihan_wrapper .pilihan{
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.slider-content.dad_sorting .ribbon_header{
+    /*padding-top: 38px;
+    text-align: center;*/
+}
+
+.mmc .place_question{
+    padding: 0px 0px 0px 40px;
+}
+
+.mmc .num_pilihan span{
+    display: none;
+}
+.pilihan.mc .txt_pilihan{
+    /*padding-left: 10px;*/
+    display: block;
+}
+.pilihan.mmc{
+    background: none !important;
+    border: none !important;
+    border-bottom: 1px solid #D5D5D5 !important;
+    border-radius: 0 !important;
+    padding: 24px 0px 24px 40px !important;
+}
+.pilihan.mc .bullet {
+    display: block;
+    width: 4.244031830238727vh;
+    height: 4.244031830238727vh;
+    position: absolute;
+    left: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #fff;
+    /*border: 1px solid #FF6666;*/
+    border: 1px solid #1D8BEC;
+    color: #000 !important;
+}
+.pilihan.mmc .bullet {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #1d8bec;
+    /*border: 1px solid #445566;*/
+    left: 0px;
+}
+li.pilihan.mmc:last-child{
+    border-bottom: unset !important;
+}
+.pilihan .bullet .bul_abjad,
+.pilihan .bullet .bul_ceklis{
+    display: none;
+    color: #000 !important;
+}
+.pilihan.mc .bullet .bul_abjad {
+    display: block;
+    /*padding: 9px;*/
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: #1D8BEC !important;
+}
+
+/* PILIHAN ACTIVE */
+.mc .pilihan_wrapper .pilihan{
+    border-radius: 0 8px 8px 0;
+    border: 1px solid #C4D9F9;
+}
+li.pilihan.mc .bullet{
+    margin-left: 40px !important;
+    border: unset;
+}
+li.pilihan.mc .txt_pilihan{
+    margin-left: 39px;
+}
+.mc .pilihan_wrapper .pilihan.active{
+    background: #1D8BEC;
+    color: #fff;
+}
+.pilihan_wrapper .pilihan.mc.active{
+    background: unset;
+    color: #1D8BEC;
+    border: 1px solid #1D8BEC;
+}
+.mmc .pilihan_wrapper .pilihan.active .bullet{
+    /*background: #1d8bec;
+    display: table;*/
+}
+.mmc .pilihan_wrapper .pilihan .bullet .bul_ceklis{
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    color: #fff !important;
+}
+.mmc .pilihan_wrapper .pilihan.right .bullet .bul_ceklis, .mmc .pilihan_wrapper .pilihan.wrong .bullet .bul_ceklis{
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 22px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    color: #fff !important;
+}
+.mmc .pilihan_wrapper .pilihan .bullet .bul_ceklis img{
+    display: none;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mmc .pilihan_wrapper .pilihan.active .bullet .bul_ceklis{
+    background: #1d8bec;
+}
+/* END */
+
+/* PILIHAN BENAR */
+.pilihan_wrapper .pilihan.mc.right{
+    background: #00C46F;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.pilihan_wrapper .pilihan.mc.right .bullet{
+    background: #00C46F;
+    color: #fff;
+    /*border: 1px solid #fff;*/
+}
+.pilihan_wrapper .pilihan.mc.right .bullet .bul_abjad{
+    color: #fff !important;
+}
+.pilihan_wrapper .pilihan.mmc.right .bullet{
+    /*background: #00C46F;
+    display: table;*/
+    border: 1px solid #00C46f;
+}
+.pilihan_wrapper .pilihan.mmc.right .bullet .bul_ceklis{
+    background: #00C46f;
+}
+.pilihan_wrapper .pilihan.mmc.right .bullet .bul_ceklis .right{
+    display: block;
+}
+/* END */
+
+/* PILIHAN SALAH */
+.pilihan_wrapper .pilihan.mc.wrong{
+    background: #FF2C24;
+    color: #fff;
+}
+.pilihan_wrapper .pilihan.mc.wrong .bullet{
+    background: #FF2C24;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.pilihan_wrapper .pilihan.mmc.wrong .bullet{
+    /*background: #FF2C24;
+    display: table;*/
+    border: 1px solid #FF2C24;
+}
+.pilihan_wrapper .pilihan.mmc.wrong .bullet .bul_ceklis{
+    background: #FF2C24;
+}
+.pilihan_wrapper .pilihan.mmc.wrong .bullet .bul_ceklis .wrong{
+    display: block;
+}
+/* END */
+
+.pilihan.wrong .bullet .bul_abjad,
+.pilihan.right .bullet .bul_abjad{
+    color: #fff !important;
+}
+
+/* DRAG AND DROP */
+.drop_wrapper{
+    display: block;
+    text-align: center;
+    /*background: #fff;*/
+    border-radius: 6px;
+    padding: 40px 10px 10px;
+}
+.drop_wrapper-2{
+    display: none;
+    /* text-align: center; */
+    /* background: #fff; */
+    /* border-radius: 6px; */
+    /*padding: 40px 10px 10px;*/
+    padding: 16px 56px 40px 40px;
+    text-align: left;
+    font-size: 2.5vh;
+    line-height: 4.986vh;
+    color: #FFFFFF;
+    position: relative;
+}
+.game_quiz_popup .drop_wrapper{
+    background: #e4e0e0;
+    margin-top: 25px;
+}
+.drop{
+    width: 160px;
+    height: 40px;
+    display: inline-block;
+    background: rgba(0,0,0,0.05);
+    border-radius: 6px;
+    margin: 0 5px;
+    vertical-align: middle;
+    display: none;
+    margin-bottom: 10px;
+    border: 1px solid #C4D9F9;
+    height: 32px;
+}
+.game_quiz_popup .drop{
+    background: #c1c1c1;
+}
+.drop_wrapper span{
+    display: inline-block;
+    vertical-align: middle;
+    /* text-shadow: none; */
+    /* height: 40px; */
+    /* padding: 4px 0; */
+}
+.drop img{
+
+}
+.drag_wrapper-2{
+    display: none;
+    /* background: rgba(0,0,0,.2); */
+    background: #6CAAD4;
+    /* padding: 10px; */
+    /* margin: 20px 0; */
+    /* margin-left: 48px; */
+    /* margin-right: 48px; */
+    min-height: 20%;
+    text-align: center;
+    background: #fafafa;
+    padding: 40px 48px 0 48px;
+}
+.drag_wrapper{
+    display: block;
+    /*background: rgba(0,0,0,.2);*/
+    background: #6CAAD4;
+    padding: 10px;
+    margin: 20px 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    min-height: 20%;
+    text-align: center;
+}
+.drag_wrapper .drag{
+    margin: 2px;
+}
+.drag{
+    width: 160px;
+    /*height: 40px;*/
+    display: inline-block;
+    background: #fff;
+    border-radius: 6px;
+    display: none;
+    /*border: 1px solid #CCCCCC;*/
+    border: 1px solid #C4D9F9;
+    height: 32px;
+}
+.drag.right{
+    background: #619C61;
+}
+.drag img{
+    
+}
+.drag .center_text{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.drag .txt_drag{
+    display: table-cell;
+    vertical-align: middle;
+    /*color: #343434;*/
+    text-align: center;
+    color: #7C7C7C;
+}
+.drag.right .txt_drag{
+    color: #fff;
+}
+.drop_wrapper,
+.drag_wrapper,
+.drop_down_wrapper{
+    display: none;
+}
+.dad .drop_wrapper,
+.dad .drag_wrapper,{
+    display: none;
+}
+.dpd .drop_down_wrapper{
+    display: block;
+}
+/* END */
+
+/* DROP DOWN */
+.drop_down_wrapper{
+    text-align: left;
+    /*background: #fff;*/
+    border-radius: 10px;
+    /*padding: 40px 10px 10px;*/
+    color: #7C7C7C;
+}
+.drop_down_wrapper select{
+    width: 160px;
+    height: 40px;
+    display: inline-block !important;
+    /*font-size: .9em;*/
+    border: 1px solid #C4D9F9 !important;
+    box-shadow: none !important;
+    transition: none;
+    border-radius: 8px;
+    display: none;
+    margin: 5px;
+    padding: 0px;
+    font-size: 2.5vh;
+    font-style: italic;
+    line-height: 36px;
+    color: #7C7C7C;
+}
+.drop_down_wrapper span{
+    margin: -3px;
+    font-size: .9em;
+}
+    /* END */
+
+/* BUTTON NEXT QUESTION */
+/*.next-soal {
+    color: #FFF;
+    border-radius: 5px;
+    background: #EF3935;
+    border-bottom: 5px solid #A50022;
+    font-size: 1.4em;
+    text-shadow: none;
+    height: 45px;
+    width: 45px;
+    display: none;
+    position: absolute;
+    top: 0;
+    padding: 4px;
+    right: 0;
+    text-align: center;
+    margin: 0;
+}
+.next-soal img{
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+}*/
+/* END */
+
+.game_quiz_popup_pilihan{
+
+}
+.game_quiz_popup_pilihan.done{
+
+}
+.game_quiz_popup_pilihan.wrong{
+
+}
+.game_quiz_popup_pilihan.right{
+    
+}
+
+.ribbon_header_cust{
+    /*padding: 16px 51px 23px 40px;*/
+    /*font-size: 2.5vh;*/
+}
+
+.slider-content.mc .ribbon_header_cust, 
+.slider-content.mmc .ribbon_header_cust, 
+.slider-content.tf .ribbon_header_cust{
+    padding: 38px 40px 23px 40px;
+}
+
+.slider-content.dad .ribbon_header_cust{
+    padding: 38px 130px 20px 40px;
+}
+
+.ribbon-content{
+    font-size: 2.5vh;
+}
+
+.question-wrapper{
+    margin-top: 24px;
+}
+
+#img_soal{
+    width: 100%;
+    display: none;
+    border-radius: 16px;
+    max-height: 220px;
+    box-shadow: 0 2px 4px #000000;
+}
+
+.pilihan_mc_img{
+    border-radius: 16px !important;
+    padding: 0 12px 12px 12px !important;
+    border: 0 !important;
+    /*background: brown !important;*/
+    /*box-shadow: 2px 4px 2px rgba(139, 135, 135, 0.75);*/
+    background: unset !important;
+    margin-bottom: 0px !important;
+}
+
+.pilihan_mc_img.right img{
+    border: 4px solid #00C46F;
+}
+
+.pilihan_mc_img.right .txt_pilihan p{
+    border: 4px solid #00C46F;
+    border-top: unset;
+    color: #00C46F;
+}
+
+.pilihan_mc_img.wrong img{
+    border: 4px solid #FF2C24;
+}
+
+.pilihan_mc_img.wrong .txt_pilihan p{
+    border: 4px solid #FF2C24;
+    border-top: unset;
+    color: #FF2C24;
+}
+
+.pilihan_mc_img .txt_pilihan{
+    margin-left: 0 !important;
+    text-align: center;
+    padding: 0 12px;
+    /*background: #fff;*/
+    border-radius: 0 0 8px 8px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: -24px;
+    z-index: 2;
+    /*box-shadow: 0px 1px 2px rgba(139, 135, 135, 0.75);*/
+}
+
+.pilihan_mc_img .txt_pilihan p{
+    background: #fff;
+    border-radius: 0 0 16px 16px;
+}
+
+/*game quiz tf*/
+.truefalse_wrapper{
+    position: absolute;
+    bottom: 28px;
+    width: 100%;
+}
+/*end game quiz tf*/
+
+/*game quiz dadsequence*/
+.pilihan.dadsequence{
+    margin-left: 72px;
+    margin-bottom: 16px;
+    background: #FFFFFF;
+    border: 1px solid #C4D9F9;
+}
+
+.pilihan.dadsequence .bullet{
+    position: absolute;
+    left: -40px;
+    background: #1D8BEC;
+    border-radius: 50%;
+    width: 4.244031830238727vh;
+    height: 4.244031830238727vh;
+}
+
+.pilihan.dadsequence .bullet .bul_abjad{
+    display: block;
+    /* padding: 9px; */
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: #FFF !important;
+}
+
+.pilihan.dadsequence .txt_pilihan{
+    color: #7C7C7C;
+}
+/*game quiz dadsequence*/
+
+/*Setting responsive*/
+/*setting mobile s*/
+@media (max-width: 374px){
+    .badge_soal_div{
+        /*bottom: -50px !important;*/
+    }
+}
+/*End setting responsive*/
+
+/*Game quiz DnD Sorting*/
+/*#content .slider-content>div>div{
+    text-align: center;
+    font-size: .9em;
+}*/
+.card_wrapper{
+    display: block;
+    height: 24vh;
+    max-width: 74.4%;
+    margin: 0 auto;
+    /*margin-top: 6.7%;*/
+    position: relative;
+    /* border-radius: 7px; */
+    margin-bottom: 10px;
+    width: 100%;
+}
+.card_wrapper .card{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    background-repeat: no-repeat;
+    display: table;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 3px 0px rgba(107, 106, 106, 0.21);
+    border-radius: 8px;
+    /* border: 3px solid #C4D9F9; */
+    border: 2px solid #1D8BEC;
+}
+.card_wrapper .card.quitLeft{
+    left: -1000px;
+    opacity: 0;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+    -webkit-animation: quitLeft 1s ease-in;
+    -moz-animation: quitLeft 1s ease-in;
+    animation: quitLeft 1s ease-in;
+}
+ .card_wrapper .card.quitRight{
+    left: 1000px;
+    opacity: 0;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    -webkit-animation: quitRight 1s ease-in;
+    -moz-animation: quitRight 1s ease-in;
+    animation: quitRight 1s ease-in;
+}
+.card_wrapper .card>div{
+    display: table-cell;
+    vertical-align: middle;
+}
+.card .icon_card{
+    display: block;
+    margin: 15px auto;
+    max-width: 110px;
+}
+.card .desc_card{
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    color: #333333;
+    font-size: 2.2vh;
+    line-height: 1.45857143;
+}
+
+.pilihan_wrapper-2{
+    margin: 0px 0;
+    text-align: center;
+    /*margin-top: 40px;*/
+    margin-top: 15vh;
+}
+.pilihan_wrapper-2 .pilihan{
+    width: 90px;
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: middle;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    color: #000;
+    text-transform: capitalize;
+}
+.pilihan_wrapper-2 .pilihan img{
+    width: 100%;
+}
+.pilihan_wrapper-2 .pilihan .active{
+    display: none;
+}
+.pilihan_wrapper-2 .pilihan.active .idle{
+    display: none;
+}
+.pilihan_wrapper-2 .pilihan.active .active{
+    display: block;
+}
+.pilihan_wrapper-2 .pilihan.text{
+
+}
+.pilihan_wrapper-2 .pilihan.text .image_wrap{
+
+display: none;
+}
+.pilihan_wrapper-2 .pilihan.image{
+    background: none !important;
+    border: none !important;
+}
+.pilihan_wrapper-2 .pilihan.image .text_wrap{
+    display: none;
+}
+.pilihan_wrapper-2 .pilihan.btn-standard{
+    box-shadow: unset;
+    width: 120px;
+    height: 100%;
+    padding: unset;
+    margin: 0 12px;
+}
+
+@-webkit-keyframes quitLeft{
+    0%{
+        left: 0;
+        opacity: 1;
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+    }
+    100%{
+        left: -1000px;
+        opacity: 0;
+        -ms-transform: rotate(-45deg); /* IE 9 */
+        -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+        transform: rotate(-45deg);
+    }
+}
+@-moz-keyframes quitLeft{
+    0%{
+        left: 0;
+        opacity: 1;
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+    }
+    100%{
+        left: -1000px;
+        opacity: 0;
+        -ms-transform: rotate(-45deg); /* IE 9 */
+        -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+        transform: rotate(-45deg);
+    }
+}
+@keyframes quitLeft{
+    0%{
+        left: 0;
+        opacity: 1;
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+    }
+    100%{
+        left: -1000px;
+        opacity: 0;
+        -ms-transform: rotate(-45deg); /* IE 9 */
+        -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+        transform: rotate(-45deg);
+    }
+}
+
+@-webkit-keyframes quitRight{
+    0%{
+        left: 0;
+        opacity: 1;
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+    }
+    100%{
+        left: 1000px;
+        opacity: 0;
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+        transform: rotate(45deg);
+    }
+}
+@-moz-keyframes quitRight{
+    0%{
+        left: 0;
+        opacity: 1;
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+    }
+    100%{
+        left: 1000px;
+        opacity: 0;
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+        transform: rotate(45deg);
+    }
+}
+@keyframes quitRight{
+    0%{
+        left: 0;
+        opacity: 1;
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+    }
+    100%{
+        left: 1000px;
+        opacity: 0;
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+        transform: rotate(45deg);
+    }
+}
+.bullet_num{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 15px 3px;
+}
+.bullet_num .default{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.2);
+}
+.bullet_num img{
+    display: none;
+    width: 100%;
+}
+.bullet_num.benar .benar{
+    display: block;
+}
+.bullet_num.salah .salah{
+    display: block;
+}
+.bullet_num.benar .default,
+.bullet_num.salah .default{
+    display: none;
+}
+
+.pilihan_wrapper-2 .pilihan.pilih-1{
+    background: #469c46;
+    border-bottom: 5px solid #3e793e;
+}
+.pilihan_wrapper-2 .pilihan.pilih-2{
+    background: #cd5a5a;
+    border-bottom: 5px solid #973939;
+}
+.btn-standard--true{
+    background: #006600;
+    border: solid 1px #006600;
+    color: #FFF;
+    border-bottom: 5px solid #034203;
+}
+.btn-standard--false{
+    background: #CD5A5A;
+    border-bottom: 5px solid #973939;
+    margin: 0 3px;
+}
+/*End game quiz DnD Sorting*/

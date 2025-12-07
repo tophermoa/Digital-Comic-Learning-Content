@@ -1,0 +1,16 @@
+{
+	"background":"white no-repeat bottom / cover",
+	"list_slider":
+	[
+		{
+			"image":"MC_DEMO_DigitalComic_MeVSStress_03_v.0.0.2.mp4",
+			"text":"Apakah kamu mengalami hal yang sama? Ikuti kisah Adinda untuk mengetahui penyebab dan cara mengatasi stres saat WFH!",
+			"gesture":false,
+			"button":[
+				{
+					"text":"NEXT"
+				}
+			]
+		}
+	]
+}

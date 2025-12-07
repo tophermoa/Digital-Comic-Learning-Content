@@ -1,0 +1,17 @@
+{
+	"environment":"game",
+	"course":"COPING WITH WFH STRESS",
+	"module":"Me vs Stress!",
+	"list_slide":[
+		{
+			"slide":0,
+			"file":"modul/digital_comic/chapter.html",
+			"class":"Chapter"
+		},
+		{
+			"slide":1,
+			"file":"modul/digital_comic/digital_comic.html",
+            "class":"DigitalComic"
+		}
+	]
+}

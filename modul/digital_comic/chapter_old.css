@@ -1,0 +1,133 @@
+.game_wrapper{
+    display: table;
+    padding: 0 !important;
+}
+.stage_wrapper{
+    display: table-cell;
+    padding: 0 2.387267904509284vh;
+    vertical-align: middle;
+}
+.stage_wrapper .stage{
+    position: relative;
+    padding: 0.7957559681697612vh;
+}
+.stage.lock .img_stage{
+    filter: brightness(0.3);
+}
+.stage.active .img_stage{
+    animation: brightactive 1.5s ease-in-out infinite;
+}
+.padlock{
+    position: absolute;
+    height: 56px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.button_wrapper{
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.button_wrapper .button_finish{
+    margin-top: 2.1220159151193636vh;
+    margin-bottom: 4.244031830238727vh;
+}
+@-webkit-keyframes brightactive {
+    0%{
+        -webkit-filter: brightness(100%);
+        filter: brightness(100%);
+   }
+    50%{
+        -webkit-filter: brightness(150%);
+        filter: brightness(150%);
+   }
+    100% {
+        -webkit-filter: brightness(100%);
+        filter: brightness(100%);
+   }
+}
+@-moz-keyframes brightactive {
+    0%{
+        -webkit-filter: brightness(100%);
+        filter: brightness(100%);
+   }
+    50%{
+        -webkit-filter: brightness(150%);
+        filter: brightness(150%);
+   }
+    100% {
+        -webkit-filter: brightness(100%);
+        filter: brightness(100%);
+   }
+}
+@-o-keyframes brightactive {
+    0%{
+        -webkit-filter: brightness(100%);
+        filter: brightness(100%);
+   }
+    50%{
+        -webkit-filter: brightness(150%);
+        filter: brightness(150%);
+   }
+    100% {
+        -webkit-filter: brightness(100%);
+        filter: brightness(100%);
+   }
+}
+@keyframes brightactive {
+    0%{
+        -webkit-filter: brightness(100%);
+        filter: brightness(100%);
+   }
+    50%{
+        -webkit-filter: brightness(150%);
+        filter: brightness(150%);
+   }
+    100% {
+        -webkit-filter: brightness(100%);
+        filter: brightness(100%);
+   }
+}
+.button_wrapper {
+    display: block !important;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.button_finish.disabled{
+    background: grey;
+}
+.slider-content{
+    background: url(/modul/digital_comic/image/stage_chapter/bg_chap.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider-content .game_wrapper .header_wrapper{
+    position: absolute;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding: 2.0610079575596818vh 2.1220159151193636vh;
+    width: 100%;
+    background: #1D8BEC;
+    border-radius: 0px 0px 16px 16px;
+}
+.slider-content .game_wrapper .stage_wrapper .stage img{
+    width: 100%;
+}
+.slider-content .game_wrapper .stage_wrapper .stage .badge_wrapper{
+    position: absolute;
+    top: 0%;
+    right: 1.2%;
+    display: none;
+    z-index: 3;
+}

@@ -1,0 +1,497 @@
+.game_quiz_popup{
+	border-radius: 0px 0px 16px 16px;
+	padding: 3.183023872679045vh 5.305039787798409vh;
+	background: url(../../assets/image/game_quiz/bg_quiz.png) no-repeat bottom / cover;
+}
+#game_quiz_page{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	background: white;
+	overflow-y: auto;
+}
+.append_quiz{
+	width: 100%;
+	height: 86%;
+	overflow-y: auto;
+	position: relative;
+	overflow-x: hidden;
+}
+/* QUESTION TEXT */
+.text_question{
+	text-align: center;
+	text-shadow: none;
+	color: #343434;
+	padding: 0px 0px 1.5915119363395225vh;
+	max-width: 500px;
+	margin: 0 auto;
+}
+.text_question span{
+	font-weight: bold;
+}
+.ftb_wrapper{
+	text-align: left;
+	/*background: #fff;*/
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	/*padding: 40px 10px 10px;*/
+}
+.input_ftb:empty:not(:focus)::before {
+	content: attr(data-placeholder);
+  }
+
+  .input_ftbi:empty:not(:focus)::before {
+	content: attr(data-placeholder);
+  }
+
+.ftbi_wrapper{
+	text-align: center;
+	justify-content: center;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.pilihan_mci_wrapper .pilihan_mci.right{
+	background: #35c486;
+	border: 1px solid #3DD996;
+}
+
+.pilihan_mci_wrapper .pilihan_mci.wrong{
+	background: #FF5D57;
+	border: 1px solid #FF5D57;
+}
+
+.pilihan_mci_wrapper .pilihan_mci.active{
+	border: 1px solid #1D8BEC;
+}
+.truefalse_wrapper button.selected.wrong{
+	color: #333333;
+	background: #FFC3C1;
+	border: 1px solid #FF5D57;
+    box-shadow: 0 3px 8px rgba(255, 195, 193, 0.3);
+}
+.truefalse_wrapper button.selected.right{
+	color: #333333;
+	background: #8FFACC;
+	border: 1px solid #3DD996;
+    box-shadow: 0 3px 8px rgba(143, 250, 204, 0.3);
+}
+.truefalse_wrapper button.selected {
+    background: #D8EDFF;
+    color: #333333;
+	border: 1px solid #1D8BEC;
+    box-shadow: 0 3px 8px rgba(112, 144, 176, 0.3);
+}
+.input_ftbi{
+	border: 1px solid #B3CAED;
+}
+.input_ftb{
+	border: 1px solid #B3CAED;
+}
+/* PILIHAN JAWABAN */
+.pilihan_wrapper{
+	list-style: none;
+	text-align: left;
+	width: 100%;
+}
+.pilihan_wrapper .pilihan{
+	line-height: 3vh;
+	padding: 2.1220159151193636vh 4.244031830238727vh;
+	border: 1px solid #B3CAED;
+	background: #fff;
+	text-shadow: none;
+	margin: 1.5915119363395225vh 0 !important;
+	border-radius: 8px;
+	position: relative;
+	max-width: 500px;
+	margin: 0 auto;
+}
+.slider-content.dadseqcat .pilihan_wrapper .pilihan{
+	margin-top: 29px;
+	height: 79px;
+}
+.pilihan_jawaban_wrapper .category_wrapper{
+	display: none;
+}
+.slider-content.dadseqcat .category_wrapper{
+	display: block;
+	position: absolute;
+	width: 100%;
+	text-align: left;
+}
+.slider-content.dadseqcat .pilihan_jawaban_wrapper .category{height: 110px;}
+.mc .pilihan_wrapper .pilihan,
+.mmc .pilihan_wrapper .pilihan{
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.mmc .num_pilihan span{
+	display: none;
+}
+.pilihan.mc .txt_pilihan{
+	/*padding-left: 10px;*/
+	display: block;
+}
+.pilihan.mmc{
+	/*background: none !important;
+	border: none !important;
+	border-bottom: 1px solid #1D8BEC !important;
+	border-radius: 0 !important;*/
+}
+.pilihan.mc .bullet, .pilihan.mmc .bullet {
+	display: block;
+	width: 4.244031830238727vh;
+	height: 4.244031830238727vh;
+	position: absolute;
+	left: -5%;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	background: #fff;
+	/*border: 1px solid #FF6666;*/
+	border: 1px solid #B3CAED;
+	color: #FFFFFF !important;
+}
+.pilihan.mmc .bullet {
+	/*display: block;
+	width: 3.183023872679045vh;
+	height: 3.183023872679045vh;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 1.0610079575596818vh;
+	background: #fff;
+	border: 1px solid #1d8bec;
+	left: 0px;*/
+}
+.pilihan .bullet .bul_abjad,
+.pilihan .bullet .bul_ceklis{
+	display: none;
+	color: #000 !important;
+}
+.pilihan.mc .bullet .bul_abjad{
+	display: block;
+	/*padding: 9px;*/
+	position: relative;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	font-weight: bold;
+}
+
+/* PILIHAN ACTIVE */
+.mc .pilihan_wrapper .pilihan.active{
+	background: #1D8BEC;
+	color: #fff;
+}
+.pilihan_wrapper .pilihan.mc.active{
+	background: #D8EDFF;
+    color: #333;
+    border: 1px solid #1D8BEC;
+}
+.pilihan_wrapper .pilihan.mc.active .bullet{
+	background: #D8EDFF;
+    border: 1px solid #1D8BEC;
+}
+.pilihan_wrapper .pilihan.tf_custom.active{
+	background: #D8EDFF;
+    color: #333;
+    border: 1px solid #1D8BEC;
+}
+.pilihan_wrapper .pilihan.tf_custom.active .bullet{
+	background: #D8EDFF;
+    border: 1px solid #1D8BEC;
+}
+.pilihan_wrapper .pilihan.mc.active .bullet .bul_abjad{
+	/* color: #5469E3 !important; */
+}
+.pilihan_wrapper .pilihan.mmc.active{
+	background: #D5DBFF;
+    border: 1px solid #5469E3;
+}
+.mmc .pilihan_wrapper .pilihan.active .bullet{
+	/*background: #1d8bec;
+	display: table;*/
+}
+.mmc .pilihan_wrapper .pilihan .bullet .bul_ceklis{
+	position: absolute;
+	display: block;
+	/*width: 2.1220159151193636vh;
+	height: 2.1220159151193636vh;*/
+	width: 2.9vh;
+    height: 2.9vh;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/*border-radius: 0.5305039787798409vh;*/
+	border-radius: 50%;
+	color: #fff !important;
+}
+.mmc .pilihan_wrapper .pilihan .bullet .bul_ceklis img{
+	display: none;
+	position: absolute;
+	width: 80%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.mmc .pilihan_wrapper .pilihan.active .bullet .bul_ceklis{
+	background: #1d8bec;
+}
+/* END */
+
+/* PILIHAN BENAR */
+.pilihan_wrapper .pilihan.mc.right, .pilihan_wrapper .pilihan.mmc.right{
+	background: #03D178;
+	color: #fff;
+	border: 1px solid #3DD996;
+}
+.pilihan_wrapper .pilihan.mc.right .bullet{
+	background: #03D178;
+	color: #35c486;
+	border: 1px solid #8FFACC;
+}
+.pilihan_wrapper .pilihan.tf_custom.right{
+	background: #8FFACC;
+	color: #fff;
+	border: 1px solid #3DD996;
+}
+.pilihan_wrapper .pilihan.mc.right .bullet .bul_abjad{
+	color: #fff !important;
+}
+.pilihan_wrapper .pilihan.mmc.right .bullet{
+	/*background: #00C46F;
+	display: table;*/
+	border: 1px solid #00C46f;
+}
+.pilihan_wrapper .pilihan.mmc.right .bullet .bul_ceklis{
+	background: #00C46f;
+}
+.pilihan_wrapper .pilihan.mmc.right .bullet .bul_ceklis .right{
+	/*display: block;*/
+}
+/* END */
+
+/* PILIHAN SALAH */
+.pilihan_wrapper .pilihan.mc.wrong, .pilihan_wrapper .pilihan.mmc.wrong{
+	background: #FF5D57;
+	color: #fff;
+	border: 1px solid #FF5D57;
+}
+.pilihan_wrapper .pilihan.mc.wrong .bullet{
+	background: #FF5D57;
+	color: #ff655f;
+	border: 1px solid #FFC3C1;
+}
+.pilihan_wrapper .pilihan.tf_custom.wrong{
+	background: #FFC3C1;
+	color: #fff;
+	border: 1px solid #FF5D57;
+}
+.input_fie{
+	line-height: 1.35857143;
+	font-size: 2.7vh;
+	border: 1px solid #B3CAED !important;
+}
+.pilihan_wrapper .pilihan.dadsequence {
+    padding: 0.75em 1em 0.75em 3em;
+    border-radius: 0.5em;
+}
+.pilihan.dadsequence .bullet {
+    display: block;
+    width: 2em;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1D8BEC;
+    border: 1px solid #B3CAED;
+    border-radius: 0.5em 0 0 0.5em;
+}
+.pilihan.dadsequence .bullet .bul_abjad {
+    display: block !important;
+    position: relative;
+    color: #FFF !important;
+    font-weight: bold;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.pilihan_wrapper .pilihan.mmc.wrong .bullet{
+	/*background: #FF2C24;
+	display: table;*/
+	border: 1px solid #FF2C24;
+}
+.pilihan_wrapper .pilihan.mmc.wrong .bullet .bul_ceklis{
+	background: #ff655f;
+}
+.pilihan_wrapper .pilihan.mmc.wrong .bullet .bul_ceklis .wrong{
+	/*display: block;*/
+}
+/* END */
+
+.pilihan.wrong .bullet .bul_abjad,
+.pilihan.right .bullet .bul_abjad{
+	color: #fff !important;
+}
+
+/* DRAG AND DROP */
+.drop_wrapper{
+    display: block;
+    text-align: center;
+    /*background: #fff;*/
+    border-radius: 6px;
+    padding: 6vh 4.5vh 1.5vh;
+    text-align: left;
+}
+.game_quiz_popup .drop_wrapper{
+	background: #e4e0e0;
+	margin-top: 25px;
+}
+.drop{
+    width: 160px;
+    height: 40px;
+    display: inline-block;
+    background: rgba(0,0,0,0.05);
+    border-radius: 6px;
+    margin: 0 5px;
+    vertical-align: middle;
+    display: none;
+    margin-bottom: 10px;
+}
+.game_quiz_popup .drop{
+	background: #c1c1c1;
+}
+.drop_wrapper span{
+    display: inline-block;
+    vertical-align: middle;
+    text-shadow: none;
+    height: 40px;
+    padding: 4px 0;
+}
+.drop img{
+
+}
+.drag_wrapper{
+    display: block;
+    background: #C4D9F9;
+    padding: 10px;
+    margin: 20px 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    min-height: 20%;
+    text-align: center;
+}
+.drag_wrapper .drag{
+    margin: 2px;
+}
+.drag{
+    width: 160px;
+    height: 40px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 6px;
+    display: none;
+    border: 1px solid #CCCCCC;
+}
+.drag.right{
+    background: #619C61;
+}
+.drag img{
+    
+}
+.drag .center_text{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.drag .txt_drag{
+    display: table-cell;
+    vertical-align: middle;
+    color: #343434;
+    text-align: center;
+}
+.drag.right .txt_drag{
+	color: #fff;
+}
+.drop_wrapper,
+.drag_wrapper,
+.drop_down_wrapper{
+	display: none;
+}
+.dad .drop_wrapper,
+.dad .drag_wrapper,
+.dpd .drop_down_wrapper{
+	display: block;
+}
+/* END */
+
+/* DROP DOWN */
+.drop_down_wrapper{
+	text-align: left;
+	/*background: #fff;*/
+	border-radius: 10px;
+	/*padding: 40px 10px 10px;*/
+}
+.drop_down_wrapper select{
+    width: 160px;
+    height: 40px;
+    display: inline-block !important;
+    /*font-size: .9em;*/
+    border: 1px solid #1d8bec !important;
+    box-shadow: none !important;
+    transition: none;
+    border-radius: 8px;
+    display: none;
+    margin: 5px;
+    padding: 0px;
+}
+.drop_down_wrapper span{
+    margin: -3px;
+    /*font-size: .9em;*/
+}
+	/* END */
+
+/* BUTTON NEXT QUESTION */
+/*.next-soal {
+	color: #FFF;
+    border-radius: 5px;
+    background: #EF3935;
+    border-bottom: 5px solid #A50022;
+    font-size: 1.4em;
+    text-shadow: none;
+	height: 45px;
+	width: 45px;
+	display: none;
+	position: absolute;
+	top: 0;
+	padding: 4px;
+	right: 0;
+	text-align: center;
+	margin: 0;
+}
+.next-soal img{
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+}*/
+/* END */
+
+.game_quiz_popup_pilihan{
+
+}
+.game_quiz_popup_pilihan.done{
+
+}
+.game_quiz_popup_pilihan.wrong{
+
+}
+.game_quiz_popup_pilihan.right{
+	
+}

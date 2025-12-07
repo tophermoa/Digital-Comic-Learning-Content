@@ -1,0 +1,131 @@
+{
+	"background":{
+		"background": "#FBF5FF"
+	},
+	"settings":{
+		"type":"page",
+		"showNumbering":true,
+		"showtruefalse":true,
+		"totalQuestion":5,
+		"limit_soal":"",
+		"isRandom":true
+	},
+	"tutorial":{
+		"css":{
+
+		}
+	},
+	"list_question":
+	[
+		{
+			"title":{
+				"text":"Pilih satu jawaban yang benar!",
+				"css":{
+					"color":"#ffffff",
+					"background":"#B857AF"
+				}
+			},
+			"type":"mc",
+			"question":"Saat sedang ada <i>deadline</i>, Ibu meminta Adinda untuk menemaninya berbelanja di warung. Hal ini dapat menjadi penyebab stres saat WFH karena....",
+			"pilihan":
+			[
+				{"index":0,"text":"Waktu kerja yang tak tentu"},
+				{"index":1,"text":"Gangguan dari lingkungan sekitar"},
+				{"index":2,"text":"Kelelahan dalam bekerja"},
+				{"index":3,"text":"Terbatasnya interaksi dengan orang sekitar"}
+			],
+			"jawaban":[1],
+			"next_button":true,
+			"button_css":{
+			}
+		},
+		{
+			"title":{
+				"text":"Pilih satu jawaban yang benar!",
+				"css":{
+					"color":"#ffffff",
+					"background":"#B857AF"
+				}
+			},
+			"type":"mc",
+			"question":"Di bawah ini, merupakan contoh yang dapat menyebabkan stres saat WFH adalah ...",
+			"pilihan":
+			[
+				{"index":0,"text":"Menyelesaikan pekerjaan pada jam kerja"},
+				{"index":1,"text":"Melakukan <i>meeting</i> virtual dengan atasan di pagi hari"},
+				{"index":2,"text":"Merindukan situasi makan siang bersama dengan rekan kerja"},
+				{"index":3,"text":"Membantu menyelesaikan pekerjaan rumah saat <i>weekend</i>"}
+			],
+			"jawaban":[2],
+			"next_button":true,
+			"button_css":{
+			}
+		},
+		{
+			"title":{
+				"text":"Pilih satu jawaban yang benar!",
+				"css":{
+					"color":"#ffffff",
+					"background":"#B857AF"
+				}
+			},
+			"type":"mc",
+			"question":"Atasan Adinda menginformasikan bahwa hasil laporan yang ia kirimkan memiliki banyak kesalahan penulisan dan harus direvisi ulang. Hal ini merupakan contoh dampak stres WFH dalam hal ...",
+			"pilihan":
+			[
+				{"index":0,"text":"Menurunnya performa dalam bekerja"},
+				{"index":1,"text":"Hilangnya motivasi dalam bekerja"},
+				{"index":2,"text":"Munculnya gangguan kesehatan fisik dan mental"},
+				{"index":3,"text":"Semua jawaban benar"}
+			],
+			"jawaban":[0],
+			"next_button":true,
+			"button_css":{
+			}
+		},
+		{
+			"title":{
+				"text":"Pilih satu jawaban yang benar!",
+				"css":{
+					"color":"#ffffff",
+					"background":"#B857AF"
+				}
+			},
+			"type":"mc",
+			"question":"Salah satu cara yang bisa dilakukan untuk mengatasi stres saat WFH adalah ...",
+			"pilihan":
+			[
+				{"index":0,"text":"Memaksimalkan performa dalam bekerja"},
+				{"index":1,"text":"Melimpahkan pekerjaan kepada rekan kerja"},
+				{"index":2,"text":"Menghindari komunikasi dengan orang lain"},
+				{"index":3,"text":"Memasak makanan favorit di rumah"}
+			],
+			"jawaban":[3],
+			"next_button":true,
+			"button_css":{
+			}
+		},
+		{
+			"title":{
+				"text":"Pilih satu jawaban yang benar!",
+				"css":{
+					"color":"#ffffff",
+					"background":"#B857AF"
+				}
+			},
+			"type":"mc",
+			"question":"Adinda terlalu lelah karena bekerja dari pagi sampai malam hingga lupa untuk beristirahat. Beberapa hal yang dapat dilakukannya, <b>kecuali</b> ...",
+			"pilihan":
+			[
+				{"index":0,"text":"Mengatur jadwal rutinitas"},
+				{"index":1,"text":"Menyampaikan kepada atasan"},
+				{"index":2,"text":"Menyempatkan waktu untuk istirahat"},
+				{"index":3,"text":"Melanjutkan pekerjaan hingga selesai"}
+			],
+			"jawaban":[3],
+			"next_button":true,
+			"button_css":{
+			}
+		}
+	]
+}

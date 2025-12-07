@@ -1,0 +1,12 @@
+{
+	"background":"white no-repeat bottom / cover",
+	"list_slider":
+	[
+		{
+			"image":"MC_DEMO_DigitalComic_MeVSStress_01_v.0.0.2.mp4",
+			"text":"Adinda adalah seorang Instructional Designer yang bekerja di Jakarta.",
+			"image_click":true,
+			"gesture":true
+		}
+	]
+}

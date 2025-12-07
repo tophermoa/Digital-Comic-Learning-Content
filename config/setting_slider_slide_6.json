@@ -1,0 +1,17 @@
+{
+	"background":"white no-repeat bottom / cover",
+	"list_slider":
+	[
+		{
+			"ribbon":"QUIZ",
+			"image":"MC_DEMO_DigitalComic_MeVSStress_QuizTime_v.0.0.2.mp4",
+			"text":"Yuk, ingat kembali tentang penyebab, dampak, hingga cara mengatasi stres saat WFH!",
+			"gesture":false,
+			"button":[
+				{
+					"text":"READY"
+				}
+			]
+		}
+	]
+}

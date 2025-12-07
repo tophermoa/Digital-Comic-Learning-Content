@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- JQUERY MOBILE -->
+    <link rel="stylesheet" href="assets/css/jquery.mobile-1.4.5.min.css">
+    <!-- BOOTSTRAP -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- SLICK SLIDER -->
+    <link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick-theme.css" />
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/scss_compiler/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/game_quiz.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/game.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="assets/plugins/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet">
+    <!-- JQUERY -->
+    <script src="assets/js/jquery-1.12.4.js" type="text/javascript"></script>
+    <!-- ========SCORM======== -->
+    <script src="assets/js/SCORM_APIWrapper.js"></script>
+</head>
+
+<body id="body" class="noselect">
+    <div class="alert"></div>
+    <div class="body-wrapper">
+        <main class="container">
+            <div id="content"></div>
+        </main> 
+    </div>
+
+    <!-- POPUP TUTORIAL -->
+    <div class="modal noselect" id="tutorial" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="">
+        <div class="modal-dialog" role="document" style="width: 90% !important;">
+            <div class="modal-content">
+                <div class="modal_feedback" style="border-radius: 1em;top: 50%;transform: translateY(-50%);">
+                    <!-- TUTORIAL CARD -->
+                    <div class="tutorial card">
+                        <div class="img_tutorial">
+                            <img src="assets/image/tutorial/tutorial_card.gif" alt="" class="img_tutorial_1">
+                        </div>
+                        <div class="description">
+                            <p class="animated fadeInLeft">Susun dan urutkan jawaban dengan menukar posisi jawaban.</p>
+                            <div class="btn-standard btn-standard--submit2 start-game">
+                                <span class="l-table-middle">
+                                    <span class="l-table-middle__cell">
+                                    OK
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- TUTORIAL SNAKE -->
+                    <div class="tutorial snake">
+                        <div style="width: 310px; margin: 0 auto; border-radius: 10px; background: #FFFFFF;">
+                            <div class="item">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/tuto01.png" alt="" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft"><i>Tap</i> setiap <i>checkpoint</i> untuk memunculkan pertanyaan. Pilih jawaban yang menurutmu benar.</p>
+                                    <div class="btn-standard btn-standard--submit start-game-snake">
+                                        <span class="l-table-middle">
+                                            <span class="l-table-middle__cell">
+                                            Ok
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TUTORIAL SNAKE -->
+                    <div class="tutorial window">
+                        <div style="margin: 10px auto; border-radius: 20px; background: #FFFFFF;">
+                            <div class="point_wrapper">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/MC_CIMB_Octo_8401.01_Tutorial_01_v.0.0.0.1.gif" alt="" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft">Pilihlah maskot OCTO pada layar monitor <i>game</i> dan jawab pertanyaan yang muncul!</p>
+                                </div>
+                            </div>
+                            <div class="point_wrapper">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/MC_CIMB_Octo_8401.01_Tutorial_02_v.0.0.0.1.gif" alt="" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft">Raih minimal <i>score</i> 80 untuk berhasil menyelesaikan <i>games</i> ini!</p>
+                                </div>
+                            </div>
+                            <div class="point_wrapper">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/MC_CIMB_Octo_8401.01_Tutorial_03_v.0.0.0.1.gif" alt="" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft">Hati-hati salah pilih karena akan menyebabkan eror!</p>
+                                    <button class="btn-standard btn-standard--submit start-game">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial floor">
+                        <div style="margin: 0 auto; border-radius: 10px; background: #FFFFFF;">
+                            <div class="point_wrapper">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/MC_CIMB_7701.01_Tutorial_01_v.0.0.0.1.gif" alt="" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft"><i>Tap</i> nasabah yang datang untuk melayani transaksi nasabah!</p>
+                                </div>
+                            </div>
+                            <div class="point_wrapper">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/MC_CIMB_7701.01_Tutorial_02_v.0.0.0.1.gif" alt="" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft">Jawablah pertanyaan dengan tepat!</p>
+                                </div>
+                            </div>
+                            <div class="point_wrapper">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/MC_CIMB_7701.01_Tutorial_03_v.0.0.0.1.gif" alt="" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft">Kumpulkan kepuasan pelanggan dari pelayanan yang tepat!</p>
+                                    <button class="btn-standard btn-standard--submit start-game">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TUTORIAL SNAKE -->
+                    <div class="tutorial ho">
+                        <p class="header_tutorial">
+                            How to Play
+                        </p>
+                        <div style="margin: 0px auto; border-radius: 20px; background: #FFFFFF;">
+                            <div class="point_wrapper">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/Tutorial_IMBT_11.301.01_01_v.0.0.0.2.gif" alt="" style="width: 90%;" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft">Temukan dan <i>tap</i> kunci hologram yang tepat pada kotak yang teracak!</p>
+                                </div>
+                            </div>
+                            <div class="point_wrapper">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/Tutorial_IMBT_11.301.01_02_v.0.0.0.2.gif" alt="" style="width: 90%;" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft">Jawab pertanyaan dengan benar untuk bisa mengaktifkan kekuatan yang terkunci!</p>
+                                </div>
+                            </div>
+                            <div class="point_wrapper">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/Tutorial_IMBT_11.301.01_03_v.0.0.0.2.gif" alt="" style="width: 90%;" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft">Waktumu hanya 4 menit untuk membuka kunci!</p>
+                                    <button class="btn-standard btn-standard--submit start-game">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TUTORIAL SNAKE -->
+                    <div class="tutorial race">
+                        <div style="margin: 0 auto; border-radius: 10px; background: #FFFFFF;">
+                            <div class="point_wrapper">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/tutorial_card.gif" alt="" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft">Bantulah Max melompati rintangan dengan menjawab pertanyaan dengan tepat.</p>
+                                </div>
+                            </div>
+                            <div class="point_wrapper">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/tutorial_card.gif" alt="" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft">Untuk lulus dari modul ini kamu harus menjawab minimal 7 pertanyaan dengan tepat!</p>
+                                </div>
+                            </div>
+                            <div class="point_wrapper">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/tutorial_card.gif" alt="" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft">Lorem ipsum</p>
+                                    <div class="button btn-standard btn-long btn-standard--submit start-game">
+                                        <span class="l-table-middle">
+                                        <span class="l-table-middle__cell">
+                                        OK
+                                        </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TUTORIAL SNAKE -->
+                    <div class="tutorial stage2">
+                        <div style="margin: 0 auto; border-radius: 10px; background: #FFFFFF;">
+                            <div class="point_wrapper">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/Tutorial_Stage_2_01_v.0.0.2.gif" alt="" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft">Perhatikan instruksi <i>settlement</i> transaksi derivatif yang ada!</p>
+                                </div>
+                            </div>
+                            <div class="point_wrapper">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/Tutorial_Stage_2_02_v.0.0.2.gif" alt="" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft">Input informasi dari instruksi yang ada ke dalam sistem! Gunakan huruf kapital untuk mengisinya!</p>
+                                </div>
+                            </div>
+                            <div class="point_wrapper">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/Tutorial_Stage_2_03_v.0.0.2.gif" alt="" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft">Jika ada instruksi terlewat, klik tombol BACK untuk melihat contoh transaksi lagi!</p>
+                                    <button class="btn-standard btn-standard--submit start-game">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial ttchoice">
+                        <div style="margin: 0 auto; border-radius: 10px; background: #FFFFFF;">
+                            <div class="point_wrapper">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/Tutorial_SPPUR_P02C01M04_01_v.0.0.0.1.gif" alt="" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft">Cek penandatangan pada <i>deal slip</i>.</p>
+                                </div>
+                            </div>
+                            <div class="point_wrapper">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/Tutorial_SPPUR_P02C01M04_02_v.0.0.0.1.gif" alt="" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft">Pilih tanda tangan yang tepat pada halaman daftar tanda tangan agar dapat lulus dari <i>stage</i> ini!</p>
+                                    <button class="button btn-standard btn-long btn-standard--submit start-game">
+                                        OK
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial ttchoice2">
+                        <div style="margin: 0 auto; border-radius: 10px; background: #FFFFFF;">
+                            <div class="point_wrapper">
+                                <div class="img_tutorial">
+                                    <img src="assets/image/tutorial/Tutorial_Stage_3.gif" alt="" class="img_tutorial_1">
+                                </div>
+                                <div class="description">
+                                    <p class="animated fadeInLeft">Pilih jawaban yang benar!</p>
+                                    <button class="button btn-standard btn-long btn-standard--submit start-game">
+                                        OK
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial video_interactive">
+                        <div class="img_tutorial">
+                            <img src="assets/image/tutorial/tutor.gif" alt="" class="img_tutorial_1">
+                        </div>
+                        <div class="description">
+                            <p class="animated fadeInLeft">Lakukan <i>gesture</i> sentuhan pada layar sesuai instruksi untuk berinteraksi dengan video.</p>
+                            <button class="btn-standard btn-standard--submit start-game">OK</button>
+                        </div>
+                    </div>
+
+                    <!-- TUTORIAL DAD SEQUENCE -->
+                    <div class="tutorial dadsequence">
+                        <div class="img_tutorial">
+                            <img src="assets/image/tutorial/tutorial_dadsequence.gif" alt="" class="img_tutorial_1">
+                        </div>
+                        <div class="description">
+                            <p class="animated fadeInLeft">Susun dan urutkan jawaban dengan menukar posisi jawaban.</p>
+                            <button class="btn-standard btn-standard--submit start-game">OK</button>
+                        </div>
+                    </div>
+
+                    <!-- TUTORIAL DAD SEQUENCE -->
+                    <div class="tutorial dadseqcat">
+                        <div class="img_tutorial">
+                            <img src="assets/image/tutorial/tutorial_dadsequence.gif" alt="" class="img_tutorial_1">
+                        </div>
+                        <div class="description">
+                            <p class="animated fadeInLeft">Susun dan urutkan jawaban dengan menukar posisi jawaban.</p>
+                            <button class="btn-standard btn-standard--submit start-game">OK</button>
+                        </div>
+                    </div>
+
+                    <!-- TUTORIAL MULTIPLE MULTIPLE CHOICE -->
+                    <div class="tutorial mmc">
+                        <div class="img_tutorial">
+                            <img src="assets/image/tutorial/Tutorial_PJB_1104.01_MMC_v.0.0.1.gif" alt="" class="img_tutorial_1">
+                        </div>
+                        <div class="description">
+                            <p class="animated fadeInLeft">Pilih beberapa jawaban yang benar!</p>
+                            <button class="btn-standard btn-standard--submit start-game">OK</button>
+                        </div>
+                    </div>
+
+                    <!-- TUTORIAL MULTIPLE CHOICE -->
+                    <div class="tutorial tf">
+                        <div class="img_tutorial">
+                            <img src="assets/image/tutorial/tutorial_mc.gif" alt="" class="img_tutorial_1">
+                        </div>
+                        <div class="description">
+                            <p class="animated fadeInLeft">Pilihlah jawaban yang menurutmu benar!</p>
+                            <button class="btn-standard btn-standard--submit start-game">OK</button>
+                        </div>
+                    </div>
+
+                    <!-- TUTORIAL MULTIPLE CHOICE -->
+                    <div class="tutorial judge">
+                        <div class="img_tutorial">
+                            <img src="assets/image/tutorial/tutorial_mc.gif" alt="" class="img_tutorial_1">
+                        </div>
+                        <div class="description">
+                            <p class="animated fadeInLeft">Pilihlah jawaban yang menurutmu benar!</p>
+                            <button class="btn-standard btn-standard--submit start-game">OK</button>
+                        </div>
+                    </div>
+
+                    <!-- TUTORIAL MULTIPLE CHOICE -->
+                    <div class="tutorial mc">
+                        <div class="img_tutorial">
+                            <img src="assets/image/tutorial/Tutorial_MC_Ungu.gif" alt="" class="img_tutorial_1">
+                        </div>
+                        <div class="description">
+                            <p class="animated fadeInLeft">Pilih satu jawaban yang benar!</p>
+                            <button class="btn-standard btn-standard--submit start-game">OK</button>
+                        </div>
+                    </div>
+
+                    <!-- TUTORIAL DAD SORTING -->
+                    <div class="tutorial dad_sorting">
+                        <div class="img_tutorial">
+                            <img src="assets/image/tutorial/Tutorial_DADFile_Hijau.gif" alt="" class="img_tutorial_1">
+                        </div>
+                        <div class="description">
+                            <p class="animated fadeInLeft">Tarik dan letakkan pernyataan ke dalam kategori yang sesuai!</p>
+                            <button class="btn-standard btn-standard--submit start-game">OK</button>
+                        </div>
+                    </div>
+
+                    <!-- TUTORIAL DRAG AND DROP -->
+                    <div class="tutorial dad">
+                        <div class="img_tutorial">
+                            <img src="assets/image/tutorial/tutorial_dad.gif" alt="" class="img_tutorial_1">
+                        </div>
+                        <div class="description">
+                            <p class="animated fadeInLeft">Pilihlah jawaban yang menurutmu benar!</p>
+                            <button class="btn-standard btn-standard--submit start-game">OK</button>
+                        </div>
+                    </div>
+
+                    <!-- TUTORIAL DRAG AND DROP -->
+                    <div class="tutorial form">
+                        <div class="img_tutorial">
+                            <img src="assets/image/tutorial/tutorial_dad.gif" alt="" class="img_tutorial_1">
+                        </div>
+                        <div class="description">
+                            <p class="animated fadeInLeft">Isilah jawaban dengan tepat agar kamu dapat lulus dari pembelajaran ini!</p>
+                            <button class="btn-standard btn-standard--submit start-game">OK</button>
+                        </div>
+                    </div>
+
+                    <!-- TUTORIAL DROPDOWN -->
+                    <div class="tutorial dpd">
+                        <div class="img_tutorial">
+                            <img src="assets/image/tutorial/Tutorial_Stage_1.gif" alt="" class="img_tutorial_1">
+                        </div>
+                        <div class="description">
+                            <p class="animated fadeInLeft">Pilihlah jawaban dengan tepat agar dapat lulus dari <i>stage</i> ini!</p>
+                            <button class="btn-standard btn-standard--submit start-game">OK</button>
+                        </div>
+                    </div>
+                    <div class="tutorial dpd_custom">
+                        <div class="img_tutorial">
+                            <img src="assets/image/tutorial/Tutorial_Stage_1.gif" alt="" class="img_tutorial_1">
+                        </div>
+                        <div class="description">
+                            <p class="animated fadeInLeft">Pilihlah jawaban dengan tepat agar dapat lulus dari <i>stage</i> ini!</p>
+                            <button class="btn-standard btn-standard--submit start-game">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/plugins/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/slick/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/game.js"></script>
+    <script type="text/javascript" src="assets/js/game_quiz_v2.js"></script>
+    <script type="text/javascript" src="assets/js/scorm_helper.js"></script>
+    <script type="text/javascript" src="assets/js/audio.js"></script>
+    <script type="text/javascript" src="assets/js/result.js"></script>
+    <script type="text/javascript" src="assets/js/resultgame.js"></script>
+    <script type="text/javascript" src="assets/js/slider.js"></script>
+    <script type="text/javascript" src="assets/js/sliderfullscreen.js"></script>
+    <script type="text/javascript" src="assets/js/quiztime.js"></script>
+    <script type="text/javascript" src="assets/js/result_step.js"></script>
+    <script type="text/javascript" src="assets/js/result_step_stage.js"></script>
+    <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="assets/js/modernizr.js"></script>
+    <script type="text/javascript" src="assets/js/hammer.min.js"></script>
+    <script src="assets/js/jquery-collision.min.js"></script>
+    <script type="text/javascript">
+        var game;
+        var sliderTutorial;
+        
+        $(document).ready(function(){
+            game = new Game();
+        });
+    </script>
+</body>
+
+</html>

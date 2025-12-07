@@ -1,0 +1,354 @@
+<link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick-theme.css"/>
+<style type="text/css">
+  p{
+    margin: 0;
+  }
+  img{
+    width: 100%;
+  }
+  .slider-content{
+    background: #FFF;
+  }
+  #ulasan{
+    margin: 0;
+    height: 100%;
+  }
+  .left-container{
+    width: 100%;
+  }
+  .right-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em 1em 0px 0px;
+    text-align: center;
+    background: none;
+    overflow-y: auto;
+  }
+  video{
+    width: 100%;
+    height: 100%;
+  }
+  .col_md_two{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .col_md_two .video{
+    background: #CEE9FF;
+  }
+  .col_md_two .bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(32,36,51,.8);
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+  }
+  .col_md_two .bg-video div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 5em;
+  }
+  .col_md_two .back_up{
+    display: none;
+    position: fixed;
+    width: 5.375rem;
+    bottom: 0;
+    right: 0;
+    padding: 0.5em;
+    margin: 0 1em 2.5rem 0;
+    background: rgba(0,0,0,0.4);
+    border: solid 2px #FFF;
+    border-radius: 0.5em;
+    z-index: 99;
+  }
+  .col_md_two .back_up img{
+    width: 85%;
+    margin: 0 auto;
+  }
+  .col_md_two .back_up p{
+    color: #FFF !important;
+    font-size: 0.75em;
+    line-height: 0.875em;
+    margin-top: 0.25em;
+  }
+  .img-load{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  .keterangan{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2em;
+  }
+  .keterangan.flip{
+    padding: 2em 2em 0;
+  }
+  .click_and_show_wrapper .button_click_and_show{
+    box-shadow: 0px 5px 0px rgba(0,0,0,0.35);
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    width: 240px;
+    border-color: #DEDEDE;
+    padding-bottom: 13px;
+    padding: 15px;
+    margin: 15px auto;
+  }
+  .click_and_show_image{
+    float: none;
+    margin: 0px auto;
+    background: #CEE9FF;
+    height: auto;
+    overflow-y: auto;
+    padding: 2.1220159151193636vh 3.466666666666667vh;
+  }
+  .image_click_and_show{
+    padding: 1.0610079575596818vh 0.8vh;
+  }
+  .icon_image {
+    border-radius: 8px;
+  }
+  .text_icon{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    font-size: 2.475685234305924vh;
+    bottom: 0;
+    left: 0;
+    padding: 1.0610079575596818vh 0.8vh;
+    line-height: 2.1220159151193636vh;
+  }
+  .text_icon p{
+    margin: 0;
+    padding: 1.5915119363395225vh 1.0610079575596818vh;
+    background: #FFF;
+    border-radius: 0px 0px 8px 8px;
+  }
+  .flip_wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 1.5em 0;
+  }
+  .flip_wrapper.slick-dotted.slick-slider{
+    margin-bottom: 0;
+  }
+  .flip_wrapper .slick-dots{
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    width: 70%;
+    margin: 1.5rem auto 0;
+  }
+  .flip_wrapper .slick-dots li{
+    width: 100% !important;
+    margin: 0;
+  }
+  .flip_wrapper .slick-dots li button{
+    width: 100% !important;
+    height: auto !important;
+    padding: 0;
+  }
+  .flip_wrapper .slick-dots li button:before{
+    width: 100% !important;
+    height: auto !important;
+    border: solid 0.25rem #B3CAED;
+    border-radius: 0;
+  }
+  .flip_wrapper .slick-dots li.slick-active button:before{
+    border: solid 0.25rem #5469e3;
+  }
+  .flipcard{
+    position: relative;
+    width: 100%;
+    height: 99%;
+    margin: 0 0.5em;
+  }
+  .flipcard_front{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(assets/image/slider/flip_front.png)  no-repeat center / cover;
+    border: solid 2px #FFF;
+    border-radius: 1em;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+    backface-visibility: hidden;
+    transition: transform 0.25s linear;
+    transform: rotateY(0deg);
+    z-index: 1;
+  }
+  .flipcard_front.active{
+    transform: rotateY(180deg);
+  }
+  .flipcard_front p{
+    position: absolute;
+    left: 0;
+    bottom: 4em;
+    padding: 0 2em;
+    color: #FFF;
+    font-size: 1.313em;
+    font-weight: bold;
+    width: 100%;
+  }
+  .flipcard_back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    border-radius: 1em;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+    backface-visibility: hidden;
+    display: flex;
+    flex-flow: column;
+    transition: transform 0.25s linear;
+    transform: rotateY(180deg);
+    z-index: 0;
+    overflow-y: auto;
+  }
+  .flipcard_back.active{
+    transform: rotateY(0deg);
+  }
+  .flipcard_back .header_flipback{
+    /*display: none;*/
+    height: 1.5em;
+    background: #000;
+    border-radius: 1em 1em 0 0;
+  }
+  .flipcard_back .title_flip{
+    padding: 3rem 1.5rem 1.5rem;
+    font-size: 1.125em;
+    font-weight: bold;
+  }
+  .flipcard_back .content_flip{
+    height: 100%;
+    padding: 0 1.5em 1.5em;
+    font-size: 0.875em;
+    /*overflow-y: auto;*/
+  }
+  .button_wrapper{
+    position: relative;
+    margin: 2.5rem 0;
+  }
+  .absolute{
+    margin-top: -1.5em;
+  }
+  .flex{
+    display: flex;
+    flex-flow: column;
+  }
+</style>
+<div class="slider-content">
+  <div class="wrap" style="padding:0;">
+    <div>
+      <!-- gesture wrapper -->
+      <div class="gesture_wrapper" style="
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+      ">
+        <img src="assets/image/other/Hand click.gif" style="
+        position: absolute;
+        bottom: 20%;
+        width: 20vh;
+        right: 0;
+        ">
+      </div>
+      <ul id="ulasan">
+        <li class="list_slider">
+          <div class="about-wrapper" style="display: unset;">
+            <div style="display: unset;vertical-align: unset;">
+              <div class="content" style="
+                display: flex;
+                flex-flow: column;
+                line-height: normal;
+                overflow-y: auto;
+              ">
+                <div class="left-container">
+                  <div class="rb-wrap" style="position: relative;">
+                    <p class="ribbon_header red" style="background: #5469E3;">
+                      <strong class="ribbon-content">Pita Tiga Dimensi</strong>
+                    </p>
+                  </div>
+                  <div class="col_md_two">
+                    <!-- VIDEO -->
+                    <div class="video">
+                      <div class="bg-video">
+                        <div>
+                          <img src="assets/image/slider/triangle.png">
+                        </div>
+                      </div>
+                      <img src="#" class="cover img-responsive img-load">
+                    </div>
+                    <div class="back_up">
+                      <img src="assets/image/slider/up.png">
+                      <p>Back to top</p>
+                    </div>
+                    <!-- END -->
+                  </div>
+                </div>
+                <div class="right-container">
+                  <!-- TEXT CONTENT -->
+                  <div class="keterangan" style="">
+                    <p> Ikuti <span class="text_danger">“Detektif ZAC”</span> kali ini untuk melatihmu membuat keputusan yang benar sesuai dengan ketentuan kepatuhan CIMB Niaga.</p>
+                  </div>
+                  <!-- END -->
+                  <!-- CLICK AND SHOW BUTTON -->
+                  <div class="click_and_show_wrapper">
+                    <div class="button_click_and_show">
+                      <div class="text"></div>
+                    </div>
+                  </div>
+                  <!-- END -->
+                  <div class="row col-xs-12 col-sm-10 col-md-9 col-lg-6 click_and_show_image">
+                    <div class="button_click_and_show">
+                      <div class="col-xs-12">
+                        <div class="text">judul</div>
+                      </div>
+                      <div class="col-xs-6 image_click_and_show">
+                        <img src="assets/image/slider/icon-01.png" class="icon_image">
+                        <div class="text_icon">
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip_wrapper">
+                    <div class="flipcard">
+                      <div class="flipcard_front">
+                        <p></p>
+                      </div>
+                      <div class="flipcard_back">
+                        <div class="header_flipback"></div>
+                        <p class="title_flip"></p>
+                        <p class="content_flip"></p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="button_wrapper">
+                  <button class="button btn-standard btn-standard--submit">NEXT</button>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="assets/plugins/slick/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/slick/slick.min.js"></script>

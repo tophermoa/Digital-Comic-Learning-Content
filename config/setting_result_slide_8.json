@@ -1,0 +1,56 @@
+{
+	"score":true,
+	"game_slide":[7],
+	"perfect":{
+		"ribbon":"win.png",
+		"background":"MC_DEMO_DigitalComic_MeVSStress_Win_v.0.0.3.mp4",
+		"description":{
+			"text":"Ayo, bebaskan diri dari stres saat WFH! Jangan biarkan stres mengendalikan harimu!",
+			"css":{
+				"color":"#000",
+				"background":"#FFF",
+				"border":"solid 1px #8BB2E6",
+				"border-radius":"12px"
+			}
+		},
+		"score_css":{
+			"color":"#000",
+			"background":"#FFF"
+		}
+	},
+	"win":{
+		"ribbon":"win.png",
+		"background":"MC_DEMO_DigitalComic_MeVSStress_Win_v.0.0.3.mp4",
+		"description":{
+			"text":"Ayo, bebaskan diri dari stres saat WFH! Jangan biarkan stres mengendalikan harimu!",
+			"css":{
+				"color":"#000",
+				"background":"#FFF",
+				"border":"solid 1px #8BB2E6",
+				"border-radius":"12px"
+			}
+		},
+		"score_css":{
+			"color":"#000",
+			"background":"#FFF"
+		}
+	},
+	"lose":{
+		"ribbon":"lose.png",
+		"background":"MC_DEMO_DigitalComic_MeVSStress_Lose_v.0.0.3.mp4",
+		"gotoSlide":7,
+		"description":{
+			"text":"Kamu belum berhasil! Pahami lagi berbagai hal yang bisa dilakukan jika mengalami stres saat WFH!",
+			"css":{
+				"color":"#000",
+				"background":"#FFF",
+				"border":"solid 1px #8BB2E6",
+				"border-radius":"12px"
+			}
+		},
+		"score_css":{
+			"color":"#000",
+			"background":"#FFF"
+		}
+	}
+}

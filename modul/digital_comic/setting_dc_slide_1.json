@@ -1,0 +1,625 @@
+{
+	"settings":{
+		"next_slide":0
+	},
+	"list_bg":[
+		{
+			"chapter":1,
+			"audio":"BGM_Chapter1.mp3",
+			"data":[
+				{
+					"background":"Part-1-BG_v02.png",
+					"list_box":[
+						{
+							"image":"Part 1 Aset 1.png",
+							"fade":"right",
+							"position":{
+								"width":"100%",
+								"top":"15%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part 1 Aset 2.png",
+							"fade":"left",
+							"position":{
+								"width":"78%",
+								"top":"24%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part 1 Aset 3a.png",
+							"fade":"right",
+							"position":{
+								"width":"70%",
+								"left":"0",
+								"top":"45%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part 1 Aset 3b.png",
+							"fade":"left",
+							"position":{
+								"width":"70%",
+								"right":"0",
+								"top":"48%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part 1 Aset 3c.png",
+							"fade":"right",
+							"position":{
+								"width":"70%",
+								"left":"0",
+								"top":"51%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part 1 Aset 4a (layer bawah).png",
+							"fade":"in",
+							"position":{
+								"width":"100%",
+								"bottom":"17%"
+							}
+						},
+						{
+							"image":"Part 1 Aset 4b (layer atas).png",
+							"position":{
+								"width":"60%",
+								"bottom":"19%"
+							}
+						},
+						{
+							"image":"Part 1 Aset 5.png",
+							"fade":"left",
+							"position":{
+								"width":"87%",
+								"bottom":"10%",
+								"opacity":"1"
+							}
+						}
+					]
+				},
+				{
+					"background":"Part-2-BG_v02.png",
+					"list_box":[
+						{
+							"image":"Part 2 Aset 1.png",
+							"fade":"left",
+							"position":{
+								"width":"65%",
+								"left":"12%",
+								"top":"10%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part 2 Aset 2.png",
+							"fade":"right",
+							"position":{
+								"width":"65%",
+								"right":"12%",
+								"top":"32%",
+								"opacity":"1"
+							}
+						}
+					]
+				},
+				{
+					"background":"Part 3 BG.png",
+					"list_box":[
+						{
+							"image":"Part 3 Aset 1.png",
+							"fade":"in",
+							"position":{
+								"width":"100%",
+								"top":"0"
+							}
+						},
+						{
+							"image":"Part 3 Aset 2.png",
+							"fade":"left",
+							"position":{
+								"width":"65%",
+								"right":"12%",
+								"top":"52%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part 3 Aset 3a.png",
+							"fade":"in",
+							"position":{
+								"width":"62%",
+								"right":"10%",
+								"bottom":"27%"
+							}
+						},
+						{
+							"image":"Part 3 Aset 3b.png",
+							"fade":"in",
+							"position":{
+								"width":"66%",
+								"right":"6%",
+								"bottom":"18%"
+							}
+						}
+					]
+				},
+				{
+					"background":"Part 4 BG.png",
+					"list_box":[
+						{
+							"image":"Part 4 Aset 1.png",
+							"fade":"up",
+							"position":{
+								"width":"100%",
+								"top":"0%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part 4 Aset 2.png",
+							"fade":"right",
+							"position":{
+								"width":"90%",
+								"right":"4%",
+								"top":"23%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part 4 Aset 3.png",
+							"fade":"in",
+							"position":{
+								"width":"100%",
+								"bottom":"35%"
+							}
+						},
+						{
+							"image":"Part 4 Aset 4a.png",
+							"fade":"in",
+							"position":{
+								"width":"20%",
+								"left":"12%",
+								"bottom":"27%"
+							}
+						},
+						{
+							"image":"Part 4 Aset 4b.png",
+							"fade":"in",
+							"position":{
+								"width":"30%",
+								"right":"12%",
+								"bottom":"25%"
+							}
+						},
+						{
+							"image":"Part 4 Aset 4c.png",
+							"fade":"in",
+							"position":{
+								"width":"30%",
+								"right":"12%",
+								"bottom":"21%"
+							}
+						},
+						{
+							"image":"Part-4-Aset-4d_v02.png",
+							"fade":"in",
+							"position":{
+								"width":"30%",
+								"right":"12%",
+								"bottom":"16%"
+							}
+						}
+					]
+				},
+				{
+					"background-image":"Part 5 BG.png",
+					"background-color-cut":"#203572",
+					"mini_quiz":{
+						"idx":1,
+						"type":"tf",
+						"title":{
+							"text":"<i>Tap</i> satu jawaban yang benar!",
+							"css":{
+								"color":"#ffffff",
+								"background":"#B857AF",
+								"padding":"2.12202vh 1.4vh",
+								"font-size":"2.1vh",
+								"text-align":"center",
+								"border-radius":"8px",
+								"margin-top":"-1px"
+							}
+						},
+						"question":"Sulitnya mengatur batasan waktu bekerja dapat menjadi penyebab stres saat WFH.",
+						"pilihan":
+						[
+							{"index":0,"text":"TRUE"},
+							{"index":1,"text":"FALSE"}
+						],
+						"quiz_css":{
+							"padding-top":"10.5vh",
+							"position":"relative"
+						},
+						"jawaban":[0],
+						"list_feedback":[
+						]
+					}
+				},
+				{
+					"background":"Part-6-BG_v03.png",
+					"list_box":[
+						{
+							"image":"Part 6 Aset 1.png",
+							"fade":"right",
+							"position":{
+								"width":"85%",
+								"left":"12%",
+								"top":"0%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part 6 Aset 2.png",
+							"fade":"in",
+							"position":{
+								"width":"65%",
+								"right":"12%",
+								"top":"13%"
+							}
+						},
+						{
+							"seru_mark":true,
+							"fade":"in",
+							"text":{
+								"text":"Kesulitan menetapkan batasan dan mengatur waktu saat WFH bisa menjadi salah satu penyebab yang dapat memicu munculnya stres.",
+								"css":{
+									"background":"#F5F7FF",
+									"color":"#0B72C4",
+									"font-size":"16px",
+									"border-radius":"14px",
+									"border":"2px solid #0033A0",
+									"padding":"2em"
+								}
+							},
+							"position":{
+								"width":"77%",
+								"top":"18%",
+								"left":"10%",
+								"z-index":"2"
+							}
+						},
+						{
+							"image":"Part 6 Aset 3.png",
+							"fade":"left",
+							"position":{
+								"width":"85%",
+								"right":"12%",
+								"top":"23.1%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part 6 Aset 4.png",
+							"fade":"up",
+							"position":{
+								"width":"100%",
+								"top":"36.7%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part 6 Aset 5.png",
+							"fade":"right",
+							"position":{
+								"width":"86%",
+								"right":"3%",
+								"top":"54.5%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part 6 Aset 6.png",
+							"timeout":1000,
+							"fade":"in",
+							"position":{
+								"width":"100%",
+								"bottom":"14.7%"
+							}
+						}
+					]
+				},
+				{
+					"background-image":"Part-7-BG_v02.png",
+					"background-color-cut":"#906495",
+					"mini_quiz":{
+						"idx":2,
+						"type":"mmc",
+						"title":{
+							"text":"<i>Tap</i> tiga jawaban yang benar!",
+							"css":{
+								"color":"#ffffff",
+								"background":"#B857AF",
+								"padding":"2.12202vh 1.4vh",
+								"font-size":"2.1vh",
+								"text-align":"center",
+								"border-radius":"8px",
+								"margin-top":"-1px"
+							}
+						},
+						"question":"Manakah dampak yang dapat ditimbulkan jika mengalami stres karena WFH?",
+						"pilihan":
+						[
+							{"index":0,"text":"Kehilangan motivasi kerja"},
+							{"index":1,"text":"Performa kerja menurun"},
+							{"index":2,"text":"Semakin fokus dalam bekerja"},
+							{"index":3,"text":"Gangguan kesehatan dan mental"}
+						],
+						"quiz_css":{
+							"padding-top":"10.5vh",
+							"position":"relative"
+						},
+						"jawaban":[0,1,3],
+						"list_feedback":[
+						]
+					}
+				},{
+					"background":"Part 8 BG.png",
+					"list_box":[
+						{
+							"image":"Part 8 Aset 1.png",
+							"fade":"right",
+							"position":{
+								"width":"56%",
+								"left":"26%",
+								"top":"30%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part-8-Aset-2_v02.png",
+							"fade":"left",
+							"position":{
+								"width":"85%",
+								"right":"10%",
+								"bottom":"20%",
+								"opacity":"1"
+							}
+						},
+						{
+							"seru_mark":true,
+							"text":{
+								"text":"Gangguan kesehatan fisik dan mental, hilangnya motivasi dalam bekerja, serta menurunnya performa dalam bekerja dapat menjadi dampak jika stres yang dialami tidak diatasi.",
+								"css":{
+									"background":"#F5F7FF",
+									"color":"#0B72C4",
+									"font-size":"16px",
+									"border-radius":"14px",
+									"border":"2px solid #0033A0",
+									"padding":"2em"
+								}
+							},
+							"position":{
+								"width":"77%",
+								"bottom":"11%",
+								"left":"10%",
+								"opacity":"1",
+								"z-index":"2"
+							}
+						}
+					],
+					"button":{
+						"text":"NEXT",
+						"position":{
+							"background":"#FE9055",
+							"bottom":"5%",
+							"border":"2px solid #FFFFFF",
+							"left":"0",
+							"right":"0",
+							"width":"50%"
+						}
+					}
+				}
+			]
+		},
+		{
+			"chapter":2,
+			"audio":"BGM_Coba.mp3",
+			"data":[
+				{
+					"background":"Part 1.png",
+					"list_box":[
+						{
+							"image":"Part 1_Asset 2.png",
+							"fade":"up",
+							"position":{
+								"width":"100%",
+								"bottom":"0%"
+							}
+						},
+						{
+							"image":"Part 1_Asset 1.png",
+							"position":{
+								"width":"100%",
+								"bottom":"0%"
+							}
+						}
+					]
+				},{
+					"background":"Part 2.png",
+					"list_box":[
+						{
+							"image":"Part 2_Asset 1.png",
+							"fade":"in",
+							"position":{
+								"width":"100%",
+								"bottom":"0"
+							}
+						}
+					]
+				},{
+					"background":"Part-3_v03.png",
+					"list_box":[
+						{
+							"image":"Part 3_Asset 1.png",
+							"fade":"in",
+							"position":{
+								"width":"100%",
+								"top":"31%"
+							}
+						},
+						{
+							"image":"Part 3_Asset 2.png",
+							"fade":"left",
+							"position":{
+								"width":"100%",
+								"top":"40%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part 3_Asset 3.png",
+							"fade":"left",
+							"position":{
+								"width":"100%",
+								"bottom":"31%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part 3_Asset 4.png",
+							"fade":"in",
+							"position":{
+								"width":"100%",
+								"bottom":"24%"
+							}
+						}
+					]
+				},{
+					"background":"Part-4_v02.png",
+					"list_box":[
+						{
+							"image":"Part 4_Asset 1.png",
+							"fade":"up",
+							"position":{
+								"width":"100%",
+								"top":"7%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part 4_Asset 2.png",
+							"fade":"left",
+							"position":{
+								"width":"100%",
+								"top":"20%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part 4_Asset 3.png",
+							"fade":"right",
+							"position":{
+								"width":"100%",
+								"top":"38%",
+								"opacity":"1"
+							}
+						},
+						{
+							"image":"Part 4_Asset 4.png",
+							"fade":"in",
+							"position":{
+								"width":"100%",
+								"bottom":"9%"
+							}
+						}
+					]
+				},
+				{
+					"background-image":"Part 5.png",
+					"background-color-cut":"#EADCCB",
+					"mini_quiz":{
+						"idx":1,
+						"type":"judge",
+						"title":{
+							"text":"<i>Tap</i> satu jawaban yang benar!",
+							"css":{
+								"color":"#ffffff",
+								"background":"#B857AF",
+								"padding":"2.12202vh 1.4vh",
+								"font-size":"2.1vh",
+								"text-align":"center",
+								"border-radius":"8px",
+								"margin-top":"-1px"
+							}
+						},
+						"question":"Salah satu cara mengatasi stres WFH yang dapat dilakukan adalah ...",
+						"pilihan":
+						[
+							{"index":0,"text":"Menjaga komunikasi dengan teman dekat"},
+							{"index":1,"text":"Menyibukkan diri dengan pekerjaan"}
+						],
+						"quiz_css":{
+							"padding-top":"10.5vh",
+							"position":"relative"
+						},
+						"jawaban":[0],
+						"list_feedback":[
+						]
+					}
+				},
+				{
+					"background":"Part 6.png",
+					"list_box":[
+						{
+							"image":"Part 6_Asset 1.png",
+							"fade":"right",
+							"position":{
+								"width":"100%",
+								"top":"7%",
+								"opacity":"1"
+							}
+						},
+						{
+							"seru_mark":true,
+							"text":{
+								"text":"Meskipun secara virtual, menjalin komunikasi dengan teman dekat dapat menjadi salah satu cara untuk mengatasi stres saat WFH.",
+								"css":{
+									"background":"#F5F7FF",
+									"color":"#0B72C4",
+									"font-size":"16px",
+									"border-radius":"14px",
+									"border":"2px solid #0033A0",
+									"padding":"2em"
+								}
+							},
+							"position":{
+								"width":"77%",
+								"bottom":"11%",
+								"left":"10%",
+								"opacity":"1",
+								"z-index":"2"
+							}
+						}
+					],
+					"button":{
+						"text":"NEXT",
+						"position":{
+							"background":"#FE9055",
+							"bottom":"5%",
+							"border":"2px solid #FFFFFF",
+							"left":"0",
+							"right":"0",
+							"width":"50%"
+						}
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,237 @@
+<style type="text/css">
+    .hide{
+        display: none;
+    }
+
+    .selected_2 {
+        background: #445566;
+    }
+
+    .slick-prev{
+        left: 0px !important;
+    }
+    .slick-next{
+        right: 0px !important;
+    }
+    .place_question{
+        position: relative;
+        margin-top: -20px;
+        background: linear-gradient(177deg, rgba(236,239,252,1) 0%, rgba(236,239,252,1) 82%, rgba(255,255,255,0) 100%);
+        border-radius: 16px 16px 0px 0px;
+        padding: 0px 5.305039787798409vh;
+        overflow-y: auto;
+        height: 77.5vh;
+    }
+    .place_question .drop_wrapper{
+        padding: 2vh 4.5vh 1.5vh;
+    }
+    .drop{
+        margin: 5px !important;
+    }
+
+    /*quiz dnd*/
+        .slider-content.dad .place_question{
+            padding: 0;
+        }
+    /*End quiz dnd*/
+
+    /*quiz tf*/
+        .tf .place_question{
+            height: unset;
+            background: unset;
+            margin-top: unset;
+            height: 100%;
+        }
+    /*End quiz tf*/
+
+    @media (min-height: 700px){
+        .txt_drag{
+            font-size: 16px;
+        }
+
+        .place_question .drop_wrapper {
+            padding: 2vh 20px 1.5vh;
+        }
+    }
+</style>
+
+<link rel="stylesheet" type="text/css" href="assets/css/game_quiz.css">
+ <!-- FEEDBACK BENAR SALAH -->
+ <div class="modal noselect col-xs-12 col-sm-10 col-md-10 col-lg-4" id="modal_feedback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin: 0 auto;">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal_feedback">
+              <div class="img_result">
+                  <img src="assets/image/general_game_assets/feedback_benar.png" alt="" class="benar">
+                  <img src="assets/image/general_game_assets/feedback_salah.png" alt="" class="salah">
+              </div>
+              <!-- <img src="assets/image/general_game_assets/icon_correctcheck.png" class="img_feedback" style="width: 100%;"> -->
+              <div class="description" style="padding: 0px 5.305039787798409vh;">
+                  <h2 class="benar">Jawabanmu benar!</h2>
+                  <h2 class="salah">Jawabanmu salah!</h2>
+                  <div class="description_wrapper" style="">
+                      <div class="places_slider" style="max-height: 53vh;overflow-y: auto;width: 224px;">
+                          <p class="" style="margin-bottom: 3.100796vh;line-height: 1.45857143;"></p>
+                      </div>
+                  </div>
+                  <button class="close_feedback btn-standard btn-standard--submit" style="margin-bottom: 3.6vh;">OK</button>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+<div id="game_quiz_page">
+    <div class="slider-content noselect" style="background: url('assets/image/game_quiz/bg_quiz.png') no-repeat bottom; background-size: cover; overflow-y: auto; height: 100%;" data-role="page" data-prev="" data-next="#slide_0_0" current_sub="0" index="-1">
+        <div class="wrap" style="padding: 0px;">
+            <div style="margin: 0 auto;width: 100%;">
+                <div class="rb-wrap">
+                    <p class="ribbon_header red">
+                        <span class="ribbon-content">Pita Tiga Dimensi</span>
+                    </p>
+                </div>
+                <!-- TIMER -->
+                <div class="timer">
+                    <img src="assets/image/general_game_assets/bg_timer.svg" alt="">
+                    <span class="txt_timer"><span class="text_time">02:00</span></span>
+                </div>
+                <!-- END -->
+
+                <div class="question-wrapper">
+                    <!-- IMAGE -->
+                    <!-- <div class="row" style="margin: 0px;">
+                        <div class="col-xs-12" style="padding: 0px;">
+                             <img src="#" alt="image-soal" id="img_soal" style="width: 100%;">
+                        </div>
+                    </div> -->
+                    <!-- END -->
+
+                    <div class="image_wrapper" style="">
+                        <img src="#" alt="image-soal" id="img_soal" style="width: 100%;max-width: 500px;">
+                    </div>
+
+                    <!-- TEXT QUESTION -->
+                    <div class="place_question" style="">
+                        <!-- title_2 -->
+                        <div class="title_2" style="
+                            position: absolute;
+                            top: 4%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            font-weight: bold;
+                            display: none;
+                        "></div>
+
+                        <!-- NUMBERING -->
+                        <div class="number_question">
+                            <!-- <img src="assets/image/game_quiz/background_num_2.png" alt=""> -->
+                            <div class="text_num">
+                                <span class="curr_soal" style="font-weight: 700;"></span>/<span class="total_soal"></span>
+                            </div>
+                        </div>
+                        <!-- END -->
+                        <div>
+                            <div class="text_question">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <!-- FOR DROP DOWN QUESTION -->
+                        <div class="drop_down_wrapper">
+                            <select name="question_1" class="form-control" data-role="none">
+                                <option value="">Pilih jawabanmu</option>
+                            </select>
+                        </div>
+                        <!-- END -->
+                        <!-- FOR FTB AND FTBI, FIE -->
+                        <div class="ftb_wrapper hide">
+                            <span data-placeholder="....." class="input_ftb" style="text-align: center;" contenteditable="true">
+                        </div>
+                        <div class="ftbi_wrapper hide">
+                            <span data-placeholder="....." class="input_ftbi" style="text-align: center;" contenteditable="true">
+                        </div>
+                        <div class="fie_wrapper hide">
+                            <textarea class="input_fie" rows="6" style="padding:16px;width:100%;" placeholder="Ketik jawabanmu disini"></textarea>
+                        </div>
+                        <!-- END -->
+                        <!-- FOR DRAG AND DROP QUESTION -->
+                        <div class="drop_wrapper">
+                            <div class="drop" style="border: 1px solid #C4D9F9;"></div>
+                        </div>
+
+                        <div class="drag_wrapper" style="width: 100%;margin: 2.5vh 0px">
+                            <div class="drag">
+                                <div class="center_text">
+                                    <span class="txt_drag">customers</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END -->
+
+                        <div class="pilihan_jawaban_wrapper" style="text-align: center;max-width: 500px;margin: 0 auto;">
+                            <div class="category_wrapper">
+                                <div class="category"></div>
+                            </div>
+                            <!-- FOR MC, MMC, OR DAD SEQUENCE -->
+                            <ul class="pilihan_wrapper hide" style="">
+                                <li class="pilihan">
+                                    <span class="bullet">
+                                        <span class="bul_abjad">A</span>
+                                        <span class="bul_ceklis">
+                                            <img class="right" src="assets/image/general_game_assets/icon_correctcheck.png">
+                                            <img class="wrong" src="assets/image/general_game_assets/icon_wrongcross.png">
+                                        </span>
+                                    </span>
+                                    <span class="txt_pilihan"></span>
+                                </li>
+                            </ul>
+                            <!-- END -->
+                            <!-- FOR MCI -->
+                            <div class="pilihan_mci_wrapper hide" style="display:flex;flex-wrap: wrap;justify-content: center;">
+                                <div class="pilihan_mci" style="
+                                box-shadow: 0 1px 4px #a0a0a0;border-radius: 16px;background:#FFFFFF;width: 44.2%;height: 96%;flex-basis: calc(50% - 7%);position: relative;margin: 4px 1.2vh;padding: unset;">
+                                    <div class="overlay-wrong hide" style="width: 100%;height: 100%;background-color: rgba(255, 195, 193, 0.5);position: absolute;border-radius: 16px 16px 16px 16px;"></div>
+                                    <div class="overlay-right hide" style="width: 100%;height: 100%;background-color: rgba(143, 250, 204, 0.5);position: absolute;border-radius: 16px 16px 16px 16px;"></div>
+                                    <img src="assets/image/game_quiz/list_img/image-1.png" style="
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 16px 16px 0 0;
+                                    padding: 2px;">
+                                    <div class="text_icon" style="padding: 1.2vw;word-wrap: break-word;">
+                                        <span style="font-size: 16px;font-weight: bold;">Text 1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END -->
+                        </div>
+                    </div>
+
+                    <!-- True False Pilihan -->
+                    <div class="truefalse_wrapper hide" style="
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        padding: 3.6vh 0;"
+                    >
+                        <button class="btn-standard btn-standard--true" index="0">True</button>
+                        <button class="btn-standard btn-standard--false" index="1">False</button>
+                    </div>
+
+                    <!-- BUTTON SUBMIT AND NEXT QUESTION -->
+                    <div class="button_wrapper" style="position: absolute;bottom: 0;left: 50%;transform: translateX(-50%);width: 100%;height: 15.6vh;background: #fff;">
+                        <div class="btn-standard btn-standard--submit btn-submit" style="margin-top: 3.5vh;">
+                            <span class="l-table-middle">
+                                <span class="l-table-middle__cell">
+                                SUBMIT
+                                </span>
+                            </span>
+                        </div>
+                        <button class="btn-standard btn-standard--submit next-soal" style="display: none;margin: 3.5vh 0px 0px;">
+                            NEXT
+                        </button>
+                    </div>
+                    <!-- END -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

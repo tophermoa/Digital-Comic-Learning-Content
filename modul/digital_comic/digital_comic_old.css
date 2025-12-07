@@ -1,0 +1,372 @@
+.body-wrapper{
+  display: block !important;
+  position: relative !important;
+}
+.comic_wrapper{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.comic_items{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.box{
+  position: absolute;
+  text-align: center;
+}
+.btn_comic{
+  position: absolute;
+}
+#content .slider-content>div{
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+.wrap>div {
+  height: 100% !important;
+  text-align: center !important;
+}
+.header{
+  z-index: 4;
+}
+.text_question {
+  text-align: center;
+  text-shadow: none;
+  color: #343434;
+  padding: 0px 0px 4.2vh;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.pilihan_jawaban_wrapper .category_wrapper {
+  display: none;
+}
+.pilihan_wrapper {
+  list-style: none;
+  text-align: left;
+  width: 100%;
+}
+.pilihan_wrapper .pilihan.mc {
+  margin: 1.5915119363395225vh 0 0 1.5vh !important;
+}
+.pilihan_wrapper .pilihan.mmc {
+  margin: 1.5915119363395225vh 0 0 1.5vh !important;
+}
+.pilihan_wrapper .pilihan {
+  line-height: 3vh;
+  padding: 2.1220159151193636vh 10px 2.1220159151193636vh 4.244032vh;
+  border: 1px solid #1D8BEC;
+  background: #D8EDFF;
+  color: #1D8BEC;
+  text-shadow: none;
+  margin: 1.5915119363395225vh 0;
+  border-radius: 16px;
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.mc .pilihan_wrapper .pilihan, .mmc .pilihan_wrapper .pilihan {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.pilihan.mc .bullet, .pilihan.mmc .bullet {
+  display: block;
+  width: 4.244031830238727vh;
+  height: 4.244031830238727vh;
+  position: absolute;
+  left: -5%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 1px solid #1D8BEC;
+  color: #1D8BEC !important;
+  background-color: #D8EDFF;
+}
+.pilihan.mc .bullet .bul_abjad {
+  display: block;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pilihan .bullet .bul_ceklis {
+  display: none;
+  color: #000 !important;
+}
+.btn-standard--true {
+  background: #D8EDFF;
+  border: 1px solid #1D8BEC;
+  color: #1D8BEC;
+  outline: unset;
+  padding: 0;
+  width: 130px;
+  border-radius: 3em;
+  box-shadow: none;
+}
+.pilihan_wrapper .pilihan.judge.wrong{
+  background: #FF5D57;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.pilihan_wrapper .pilihan.mmc.active {
+  background: rgb(29, 139, 236);
+  border: 1px solid #1D8BEC;
+  color: #fff;
+}
+.pilihan_wrapper .pilihan.judge.right{
+  background: #03D178;
+  color: #FFFFFF;
+  border: 1px solid #fff;
+}
+.pilihan_wrapper .pilihan.judge{
+  padding: 3.1220159151193636vh 10px;
+  border-radius: 3em;
+}
+.pilihan_wrapper .pilihan.judge {
+  margin: 1.5915119363395225vh 1.5vh !important;
+}
+.pilihan_wrapper .pilihan.mc.right, .pilihan_wrapper .pilihan.mmc.right{
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+.pilihan_wrapper .pilihan.mc.wrong, .pilihan_wrapper .pilihan.mmc.wrong{
+  background: #ff655f;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.pilihan_wrapper .pilihan.mc.right .bullet{
+  border: 1px solid #fff !important;
+}
+.pilihan_wrapper .pilihan.mc.wrong .bullet{
+  border: 1px solid #fff !important;
+}
+.pilihan_jawaban_wrapper.judge{
+  padding: 2vh;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  left: 0;
+}
+.pilihan_jawaban_wrapper.mmc ul{
+  margin-bottom: 0;
+}
+.btn-standard--false {
+  background: #D8EDFF;
+  border: 1px solid #1D8BEC;
+  color: #1D8BEC;
+  outline: unset;
+  margin-left: 2.1220159151193636vh;
+  padding: 0;
+  width: 130px;
+  border-radius: 3em;
+  box-shadow: none;
+}
+.question-wrapper {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.truefalse_wrapper button.selected {
+  background: #5469E3;
+  color: #fff;
+  border: none;
+}
+.pilihan.mc .txt_pilihan {
+  padding-left: 0;
+  display: block;
+}
+.ribbon_header{
+  border-radius: 8px;
+  padding: 11px 2.1220159151193636vh;
+  line-height: 1.42857143;
+}
+.pilihan_wrapper .pilihan.mc.right, .pilihan_wrapper .pilihan.mmc.right {
+  background: #03D178;
+  color: #FFFFFF;
+  border: 1px solid #fff;
+}
+.img_gesture-2{
+  -webkit-mask-image:-webkit-gradient(linear, left top, left 85%, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image: linear-gradient(linear, left top, left 85%, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+.gesture_wrapper{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+}
+.gesture_wrapper #gw-0{
+  display:block;
+  width: 100%;
+  height: 100%;
+}
+.gesture_wrapper #gw-0 .img_gesture-1{
+  position: absolute;
+  top: 20%;
+  width: 40.68%;
+  right: 0;
+}
+.gesture_wrapper #gw-1{
+  display:none;
+  width: 100%;
+  height: 100%;
+}
+.gesture_wrapper #gw-1 .img_gesture-2{
+  position: absolute;
+  top: -25%;
+  width: 15%;
+  right: 5%;
+}
+.gesture_wrapper #gw-2{
+  display:none;
+  width: 100%;
+  height: 100%;
+}
+.gesture_wrapper #gw-2 .img_gesture-3{
+  position: absolute;
+  top: -25%;
+  width: 15%;
+  right: 5%;
+}
+.back_up{
+  display: none;
+  position: absolute;
+  width: 5.375rem;
+  bottom: 0;
+  right: 0;
+  padding: 0.5em;
+  margin: 0 1em 2.5rem 0;
+  background: rgba(0,0,0,0.4);
+  border: solid 2px #FFF;
+  border-radius: 0.5em;
+  z-index: 99;
+  text-align: center;
+}
+.back_up img{
+  margin: 0 auto;
+  width: 85%;
+}
+.back_up p{
+  color: #FFF !important;
+  font-size: 12px;
+  line-height: 0.875em;
+  margin-top: 0.25em;
+  text-align: center;
+  margin-bottom: 0;
+}
+.popupAlertVideo .description .img_header{
+  margin-bottom: 3vh;
+}
+.popupAlertVideo .description .img_header img{
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.popupAlertVideo .description .desc{
+  padding: 1vh 2vh;
+}
+.popupAlertVideo .description .btn-wrapper{
+  padding: 4vh 0px;
+}
+.comic_wrapper .comic_items .box img{
+  width: 100%;
+}
+.comic_wrapper .comic_items .box p{
+  margin: 0;
+  padding: 1em;
+}
+.comic_wrapper .comic_items .slider-content{
+  width:100%;
+  overflow-y: auto;
+  padding: 10.5vh 2.4vh 7.2vh;
+  margin-top:-1px;
+}
+.comic_wrapper .comic_items .slider-content .wrap{
+  padding: 0 !important;
+}
+.comic_wrapper .comic_items .slider-content .wrap .wrap_child{
+  margin: 0 auto;
+  width: 100%;
+}
+.comic_wrapper .comic_items .slider-content .wrap .wrap_child .question-wrapper{
+  background: #FFFFFF;
+  border-radius: 28px !important;
+  border: 2px solid #0033A0;
+  margin-bottom: 11px;
+}
+.comic_wrapper .comic_items .slider-content .wrap .wrap_child .question-wrapper .image_wrapper img{
+  width: 100%;
+  max-width: 500px;
+}
+.comic_wrapper .comic_items .slider-content .wrap .wrap_child .question-wrapper .place_question .title_2{
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  display: none;
+}
+.comic_wrapper .comic_items .slider-content .wrap .wrap_child .question-wrapper .place_question .header_question{
+  position: relative;
+}
+.comic_wrapper .comic_items .slider-content .wrap .wrap_child .question-wrapper .place_question .header_question .ques_mark{
+  transform: translate3d(-50%,-50%,0);
+  left: 50%;
+  position: absolute;
+  z-index: 99;
+}
+.comic_wrapper .comic_items .slider-content .wrap .wrap_child .question-wrapper .place_question .header_question .ques_mark img{
+  height:6vh;
+}
+.comic_wrapper .comic_items .slider-content .wrap .wrap_child .question-wrapper .place_question .header_question .text_question .rb-wrap{
+  position: relative;
+  width: 100%;
+  top: 0;
+  padding: 4.37vh 3vh 1.591512vh;
+  z-index: 1;
+}
+.comic_wrapper .comic_items .slider-content .wrap .wrap_child .question-wrapper .place_question .header_question .text_question .soal{
+  position: relative;
+  padding: 2vh 3vh 0;
+}
+.comic_wrapper .comic_items .slider-content .wrap .wrap_child .question-wrapper .place_question .pilihan_jawaban_wrapper{
+  padding:0 2.6vh 3.6vh 2.6vh;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.comic_wrapper .comic_items .slider-content .wrap .wrap_child .question-wrapper .place_question .pilihan_jawaban_wrapper .txt_pilihan{
+  text-align: left;
+}
+.comic_wrapper .comic_items .slider-content .wrap .wrap_child .question-wrapper .truefalse_wrapper{
+  position: relative;
+  width: 100%;
+  transform: translateX(-50%);
+  left: 50%;
+  padding: 0 1.6vh 3.6vh 1.6vh;
+}
+.comic_wrapper .comic_items .slider-content .wrap .wrap_child .question-wrapper .button_wrapper{
+  display:none;
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 12.6vh;
+  background: none;
+}
+.comic_wrapper .comic_items .slider-content .wrap .wrap_child .question-wrapper .button_wrapper button{
+  display: none;
+  margin: 3.5vh 0px 0px;
+}
+.comic_bg{
+  width: 100%;
+}

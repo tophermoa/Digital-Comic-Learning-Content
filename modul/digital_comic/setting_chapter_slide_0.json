@@ -1,0 +1,22 @@
+{
+	"background":"url('assets/image/general_game_assets/bg_city.png') white no-repeat bottom",
+	"settings":{
+		"notif":true
+	},
+	"items_row":2,
+	"items":[
+		{
+			"default":"img-chap01_v02.png"
+		},
+		{
+			"default":"img-chap02_v02.png"
+		}
+	],
+	"list_tutorial":[
+	],
+	"button":{
+		"text":"NEXT",
+		"gotoslide":10,
+		"css":""
+	}
+}

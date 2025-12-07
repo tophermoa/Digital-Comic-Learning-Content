@@ -1,0 +1,12 @@
+{
+	"background":"white no-repeat bottom / cover",
+	"list_slider":
+	[
+		{
+			"image":"MC_DEMO_DigitalComic_MeVSStress_02_v.0.0.3.mp4",
+			"text":"Ketika pandemi, Adinda terpaksa harus bekerja di rumah alias WFH. Perubahan situasi ini tanpa sadar membuatnya stres!",
+			"image_click":true,
+			"gesture":false
+		}
+	]
+}

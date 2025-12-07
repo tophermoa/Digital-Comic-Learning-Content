@@ -1,0 +1,157 @@
+<style type="text/css">
+    .result_wrapper{
+        position: relative;
+        background: url(assets/image/cover/halaman_result.png) no-repeat center / cover;
+        padding: 3.183023872679045vh;
+    }
+    .button_text_wrapper{
+        position: absolute;
+        width: 100%;
+        bottom: 3.183023872679045vh;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0 5.305039787798409vh;
+    }
+    .text_wrapper{
+        min-height: 15vh;
+        background: #FFF;
+        color: #000;
+        width: 100%;
+        margin-bottom: 2.1220159151193636vh;
+        padding: 4.244031830238727vh 3.183023872679045vh;
+        border: unset;
+        box-shadow: 0px 2px 6px 0px rgba(0, 82, 126, 0.2);
+    }
+    .score_wrapper{
+        /*width: 15vh;
+        background: #FFF;
+        margin: 2.4vh auto 0px;
+        padding: 1.0610079575596818vh;
+        border-radius: 2.1220159151193636vh;
+        line-height: 1.2;*/
+
+        background: url(assets/image/result/score_bg.png);
+        background-size: 100% 100%;
+        margin: 1.8vh auto;
+        width: 27.74vh;
+        height: 7.5vh;
+        padding: 0;
+        box-shadow: 0px 2px 6px 0px rgba(0, 82, 126, 0.2);
+    }
+    .score_wrapper p{
+        margin: 0;
+        font-weight: 700;
+    }
+    .score_wrapper .score{
+        /*font-size: 6.36604774535809vh;*/
+
+        padding: 0px 2.7vh 0px 15.45vh;
+        font-size: 5.4vh;
+        color: #fff;
+    }
+    .star_wrapper{
+        margin-top: 2.4vh;
+    }
+    .star_wrapper .star{
+        width: 4.244031830238727vh;
+        height: 4.244031830238727vh;
+        display: inline-block;
+        background: url(assets/image/cover/Bintang_default.png) no-repeat center / cover;
+    }
+    .star_wrapper .star.active{
+        background: url(assets/image/cover/Bintang_active.png) no-repeat center / cover;
+    }
+    .result_wrapper.lose .score{
+        /*color: #E23E37;*/
+    }
+    .result_wrapper.win .score{
+        /*color: #00AA65;*/
+    }
+
+    .ribbon_result{
+        position: relative;
+    }
+
+    .ribbon_result .text_ribbon_result{
+        font-weight: bold;
+        font-size: 3.5vh;
+        /* position: absolute; */
+        /* top: 0; */
+        width: 100%;
+        color: #FFFFFF;
+        padding: 1vh;
+    }
+
+    .video_wrapper{
+        position: absolute;
+        overflow-y: hidden;
+        top: 0;
+        width: 100%;
+    }
+    
+    .video_wrapper video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        object-fit: cover;
+        background: white;
+        /*object-position: top;*/
+    }
+
+    .video_wrapper .img_video{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        display: none;
+    }
+</style>
+<div class="slider-content noselect" data-role="page" data-prev="" data-next="" current_sub="0" index="-1" id="result">
+    <div class="wrap" style="padding: 0px;position: relative;">
+         <div class="video_wrapper">
+            <video id="video" preload="none" controlsList="nodownload" playsinline muted="muted" poster="assets/image/other/bg.png">
+                <source src="" type="video/mp4">
+            </video>
+            <img class="img_video" src="assets/image/cover/bg_video.png" style="">
+        </div>
+        <div class="result_wrapper">
+            <div class="ribbon_result">
+                <!-- <img src="assets/image/cover/Group 4735.png" style="width: 100%;"> -->
+                <div class="text_ribbon_result" style="
+                    background: url('');
+                    background-size: 100% 100%;
+                    padding: 1vh;
+                ">Text</div>
+            </div>
+            <div class="star_score_wrapper">
+                <div class="star_wrapper">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </div>
+                <div class="score_wrapper">
+                    <p class="text_score" style="display: none;">SCORE</p>
+                    <p class="score">0</p>
+                </div>
+            </div>
+            <div class="button_text_wrapper">
+                <div class="text_wrapper">
+                    Segera laksanakan misi berikutnya untuk menangkap Lord X!
+                </div>
+                <div class="button_wrapper">
+                    <button class="button btn-standard btn-game">
+                        NEXT
+                    </button>
+                    <button class="button btn-standard btn-game-2" style="display: none;">
+                        NEXT
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
