@@ -18,6 +18,11 @@ Learners progress through a comic-style storyline and may encounter **mini-quizz
 
 ---
 
+## 🔎 Preview
+
+![Preview](documentation/preview_1.jpg)
+![Preview](documentation/preview_2.jpg)
+
 ## 🧰 Tech Stack
 
 | Technology | Description |
