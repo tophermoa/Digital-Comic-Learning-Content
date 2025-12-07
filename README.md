@@ -18,6 +18,11 @@ Learners progress through a comic-style storyline and may encounter **mini-quizz
 
 ---
 
+## ⚠ Disclaimer
+
+This learning content was *primarily designed and optimized for mobile device views*.  
+While it may still function on desktop screens, the layout, animation behavior, and overall user experience are best viewed on *mobile portrait* orientation.
+
 ## Demo
 
 Live demo here: https://clinquant-tanuki-92426b.netlify.app
