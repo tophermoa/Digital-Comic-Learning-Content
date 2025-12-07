@@ -18,6 +18,10 @@ Learners progress through a comic-style storyline and may encounter **mini-quizz
 
 ---
 
+## Demo
+
+Live demo here: https://clinquant-tanuki-92426b.netlify.app
+
 ## 🔎 Preview
 
 ![Preview](documentation/preview_1.jpg)
