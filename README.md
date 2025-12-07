@@ -26,6 +26,7 @@ Live demo here: https://clinquant-tanuki-92426b.netlify.app
 
 ![Preview](documentation/preview_1.jpg)
 ![Preview](documentation/preview_2.jpg)
+![Preview](documentation/preview_3.jpg)
 
 ## 🧰 Tech Stack
 
