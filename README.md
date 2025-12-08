@@ -25,7 +25,7 @@ While it may still function on desktop screens, the layout, animation behavior, 
 
 ## Demo
 
-Live demo here: https://clinquant-tanuki-92426b.netlify.app
+✨ **Live Demo:** https://clinquant-tanuki-92426b.netlify.app
 
 ## 🔎 Preview
 
@@ -44,13 +44,12 @@ Live demo here: https://clinquant-tanuki-92426b.netlify.app
 | **JSON** | Story and quiz configuration |
 | **AOS.js** | Scroll and animation effects |
 
----
 
 ## 🚀 Getting Started
 
 ### Clone the repository
 ```
-git clone <repository-url>
+git clone https://github.com/tophermoa/Digital-Comic-Learning-Content.git
 ```
 
 ## Run the project
